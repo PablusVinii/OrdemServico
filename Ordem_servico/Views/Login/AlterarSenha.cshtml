@@ -1,0 +1,90 @@
+﻿@model TransferenciaObjetos.Autenticacao.Usuario
+
+<div class="col-lg-12">
+    <h2>Alterar Senha</h2>
+    <ol class="breadcrumb">
+        <li><a href='#'>Usuários</a></li>
+        <li class="active">Alterar Senha</li>
+    </ol>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Usuários
+        </div>
+        <div class="panel-body">
+             <div class="col-lg-12">
+                @if (Request.QueryString["st"] != null)
+                {
+                    string estilo = string.Empty;
+                    string mensagem = string.Empty;
+
+                    string situacao = Request.QueryString["st"].ToString();
+
+                    switch (situacao)
+                    {
+                        case "ok":
+                            estilo = "alert-success";
+                            mensagem = "Operação realizada com sucesso!";
+                            break;
+                        case "iv":
+                            estilo = "alert-warning";
+                            mensagem = "Informações inválidas, tente novamente.";
+                            break;
+                        case "er":
+                            estilo = "alert-danger";
+                            mensagem = "Uma falha ocorreu durante o processo";
+                            break;
+                        case "tf":
+                            estilo = "alert-info";
+                            mensagem = "Acabou o prazo para edição desta Ordem de Serviço";
+                            break;
+                    }
+            
+                    <div class="alert @estilo alert-dismissable" style="margin-top:30px">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        @mensagem
+                    </div>
+                }
+            </div>
+            <div class="form-group">
+                <div class="col-lg-8">
+                    @using (Html.BeginForm())
+                    {        
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                        <div>
+                            @Html.LabelFor(model => model.NomeUsuario)
+                        </div>
+                        <div>
+                            @Html.TextBoxFor(model => model.NomeUsuario, new { @class = "form-control"})
+                            @Html.ValidationMessageFor(model => model.NomeUsuario)
+                        </div>
+                        <div>
+                            @Html.LabelFor(model => model.Senha)
+                        </div>
+                        <div>
+                            @Html.PasswordFor(model => model.Senha, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Senha)
+                        </div>
+                        
+                        <div>
+                            @Html.LabelFor(model => model.RepetirSenha)
+                        </div>                        
+                        <div>
+                            @Html.PasswordFor(model => model.RepetirSenha, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.RepetirSenha)
+                        </div>
+                        <p style="margin-top: 30px;">
+                            <input type="submit" value="Enviar" class="btn btn-info" />
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

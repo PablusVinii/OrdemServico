@@ -1,0 +1,19 @@
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Release\AcessaDados.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Release\AcessaDados.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Release\TransferenciaObjetos.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Release\TransferenciaObjetos.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\obj\Release\AcessaDados.csprojResolveAssemblyReference.cache
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\obj\Release\AcessaDados.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\obj\Release\AcessaDados.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Release\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Release\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Release\AcessaDados.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Release\AcessaDados.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Release\TransferenciaObjetos.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Release\TransferenciaObjetos.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Release\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\obj\Release\AcessaDados.csprojResolveAssemblyReference.cache
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\obj\Release\AcessaDados.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\obj\Release\AcessaDados.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Release\TRS.Apoio.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Release\TRS.Apoio.pdb

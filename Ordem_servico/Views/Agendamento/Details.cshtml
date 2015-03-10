@@ -1,0 +1,97 @@
+﻿@model TransferenciaObjetos.Agendamento
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-12">
+    <h2>Detalhes</h2>
+    <ol class="breadcrumb">
+        <li><a href='@Url.Action("Index")'>Agendamentos</a></li>
+        <li class="active">Detalhes</li>
+    </ol>    
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Agendamento
+        </div>
+        <div class="panel-body">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Codigo)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Codigo)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Status.Descricao)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Status.Descricao)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Funcionario.Nome)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Funcionario.Nome)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Cliente.Nome)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Cliente.Nome)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.DataPrevista)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.DataPrevista)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.InicioPrevisto)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.InicioPrevisto)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.FimPrevisto)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.FimPrevisto)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.TrasladoPrevisto)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TrasladoPrevisto)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.ResumoAgendamento)
+                </dt>
+                <text>
+                    @Html.DisplayFor(model => model.ResumoAgendamento)
+                </text>
+            </dl>
+        </div>
+    </div>
+    <p>
+        @Html.ActionLink("Editar", "Edit", new { id = Model.Codigo }, new { @class = "btn btn-info" }) |
+
+        @Html.ActionLink("Excluir", "Delete", new { id = Model.Codigo }, new { @class = "btn btn-danger" }) |
+
+        @switch (Model.Status.Codigo)
+        {
+            default:
+            @Html.ActionLink("Alterar Status", "AlterarStatus", new { id = Model.Codigo });
+                                                                                          break;
+            case 2:
+            @Html.ActionLink("Gerar Ordem de Serviço", "GerarOS", new { id = Model.Codigo });
+                                                                                          break;
+        }
+
+        |
+
+        @Html.ActionLink("Voltar", "Index")
+    </p>
+</div>

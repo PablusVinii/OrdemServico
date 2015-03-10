@@ -1,0 +1,111 @@
+﻿@model TransferenciaObjetos.Agendamento
+
+
+<div>
+    @Html.LabelFor(model => model.Status)
+</div>
+<div>
+    @Html.DropDownListFor(model => model.Status.Codigo, new SelectList(ViewBag.Situacoes, "Value", "Text", Model.Status), new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.Status.Codigo)
+</div>
+
+<fieldset>
+    <h4 class="page-header">Agendamentos</h4>
+    <fieldset style="margin-bottom: 30px;">
+        <div>
+            <div class="col-lg-6">
+                <div>
+                    @Html.LabelFor(model => model.DataDe)
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.DataDe, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.DataDe)
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div>
+                    @Html.LabelFor(model => model.DataDe)
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.DataFim, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.DataFim)
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <fieldset>
+                <legend>Dias da semana</legend>
+                <div>
+                    @Html.CheckBoxFor(model => model.Todos, new { @checked = "checked" })
+                    @Html.LabelFor(model => model.Todos)
+                </div>
+                <div>
+                    @Html.CheckBoxFor(model => model.Domingo)
+                    @Html.LabelFor(model => model.Domingo)
+                </div>
+                <div>
+                    @Html.CheckBoxFor(model => model.Segunda)
+                    @Html.LabelFor(model => model.Segunda)
+                </div>
+                <div>
+                    @Html.CheckBoxFor(model => model.Terca)
+                    @Html.LabelFor(model => model.Terca)
+                </div>
+                <div>
+                    @Html.CheckBoxFor(model => model.Quarta)
+                    @Html.LabelFor(model => model.Quarta)
+                </div>
+                <div>
+                    @Html.CheckBoxFor(model => model.Quinta)
+                    @Html.LabelFor(model => model.Quinta)
+                </div>
+                <div>
+                    @Html.CheckBoxFor(model => model.Sexta)
+                    @Html.LabelFor(model => model.Sexta)
+                </div>
+                <div>
+                    @Html.CheckBoxFor(model => model.Sabado)
+                    @Html.LabelFor(model => model.Sabado)
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <div class="col-lg-3">
+                <div>
+                    @Html.LabelFor(model => model.InicioPrevisto)
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.InicioPrevisto, new { @class = "form-control inicio" })
+                    @Html.ValidationMessageFor(model => model.InicioPrevisto)
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    @Html.LabelFor(model => model.FimPrevisto)
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.FimPrevisto, new { @class = "form-control fim" })
+                    @Html.ValidationMessageFor(model => model.FimPrevisto)
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    @Html.LabelFor(model => model.TrasladoPrevisto)
+                </div>
+                <div>
+                    @Html.TextBoxFor(model => model.TrasladoPrevisto, new { @class = "form-control traslado" })
+                    @Html.ValidationMessageFor(model => model.TrasladoPrevisto)
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div>
+                @Html.LabelFor(model => model.ResumoAgendamento)
+            </div>
+            <div>
+                @Html.TextAreaFor(model => model.ResumoAgendamento, new { @class = "form-control", @rows = "5" })
+                @Html.ValidationMessageFor(model => model.ResumoAgendamento)
+            </div>
+        </div>
+    </fieldset>
+</fieldset>

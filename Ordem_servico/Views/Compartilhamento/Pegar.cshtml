@@ -1,0 +1,73 @@
+﻿@model Ordem_servico.Models.Compartilhamento
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href='@Url.Content("~/Images/icon_impacto.png")' rel="shortcut icon" type="image/x-icon" />
+    @Styles.Render("~/Content/themes/sb-admin-v2/css/bootstrap.min.css")
+    @Styles.Render("~/Content/themes/sb-admin-v2/font-awesome/css/font-awesome.css")
+    @Styles.Render("~/Content/themes/sb-admin-v2/css/sb-admin.css")
+    @Styles.Render("~/Content/themes/custom.css")
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4" style="text-align: center">
+                <a href='http://www.trssistemas.com.br/'>
+                    <img src='@Url.Content("~/Images/logo.png")' alt="TRS Sistemas"  class="col-md-12" />
+                </a>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Selecione Empresa e Filial</h3>
+                    </div>
+                    <div class="panel-body">
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true)
+
+                            <fieldset>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.EmpresaId)
+                                </div>
+                                <div class="form-group">
+                                    @Html.DropDownListFor(model => model.EmpresaId, new SelectList(Model.Empresas, "Codigo", "Nome"), "Selecione uma Empresa", new { @class = "form-control", @onchange = "this.form.submit();" })
+                                    @Html.ValidationMessageFor(model => model.EmpresaId)
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.FilialId)
+                                </div>
+                                <div class="form-group">
+                                    @Html.DropDownListFor(model => model.FilialId, new SelectList(Model.Filiais, "Codigo", "Nome"), "Selecione uma Filial", new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.FilialId)
+                                </div>
+
+                                <p>
+                                    <input type="submit" class="btn btn-lg btn-primary btn-block" value="Enviar" />
+                                </p>
+                            </fieldset>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/Scripts/bootstrap.min.js")
+    @Scripts.Render("~/Scripts/plugins/metisMenu/jquery.metisMenu.js")
+    @Scripts.Render("~/Scripts/bootstrap-datepicker.js")
+    @Scripts.Render("~/Scripts/sb-admin.js")
+</body>
+</html>

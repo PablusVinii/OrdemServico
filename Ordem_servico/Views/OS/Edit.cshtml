@@ -1,0 +1,166 @@
+﻿@model TransferenciaObjetos.OrdemServico
+
+<script src="~/Scripts/PegarProjetos.js"></script>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-12">
+
+    <h2>Edição</h2>
+    <ol class="breadcrumb">
+        <li><a href='@Url.Action("Index")'>Ordem de Serviço</a></li>
+        <li class="active">Edição</li>
+    </ol>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Ordem de Serviço
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <div class="col-lg-8">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                        @Html.HiddenFor(model => model.Remoto)
+
+                        <div>
+                            @Html.LabelFor(model => model.Faturado)
+                        </div>
+                        <div>
+                            @Html.CheckBoxFor(model => model.Faturado)
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Codigo)
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextBoxFor(model => model.Codigo, new { @class = "form-control", @disabled = "disabled" })
+                        </div>
+                        <div>
+                            @Html.LabelFor(model => model.Status.Codigo) <span class="field-validation-error">*</span>
+                        </div>
+                        <div>
+                            @Html.DropDownListFor(model => model.Status.Codigo, new SelectList(Model.SituacacoesSelecionaveis, "Value", "Text", Model.Status), new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Status.Codigo)
+                        </div>
+                        <div>
+                            @Html.LabelFor(model => model.Cliente) <span class="field-validation-error">*</span>
+                        </div>
+                        <div>
+                            @Html.DropDownListFor(model => model.Cliente.Codigo, new SelectList(Model.ClientesSelecionaveis, "Value", "Text", Model.Cliente), new { @class = "form-control", @onchange="PegarProjetos()"  })
+                        </div>
+
+                        <div>
+                            @Html.LabelFor(model => model.Projeto) <span class="field-validation-error">*</span>
+                        </div>
+                        <div>
+                            @Html.DropDownListFor(model => model.Projeto.Codigo, new SelectList(Model.ProjetoSelecionaveis, "Value", "Text", Model.Projeto), new { @class="form-control"})
+                            @Html.ValidationMessageFor(model => model.Projeto.Codigo)
+                        </div>
+                        
+                        <div>
+                            @Html.LabelFor(model => model.TipoHora)<span class="field=validation-error">*</span>
+                        </div>
+                        <div>
+                            @Html.DropDownListFor(model => model.TipoHora.Codigo, new SelectList(Model.TipoHoraSelecionaveis, "Value","Text",Model.TipoHora), new {@class="form-control"})
+                            @Html.ValidationMessageFor(model => model.TipoHora.Codigo)
+                        </div>
+                        
+                        if (!Model.Remoto)
+                        {                            
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.Data) <span class="field-validation-error">*</span>
+                            </div>
+                            <div class="editor-field">
+                                @Html.TextBoxFor(model => model.Data, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Data)
+                            </div>
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.Inicio) <span class="field-validation-error">*</span>
+                            </div>
+                            <div class="editor-field">
+                                @Html.TextBoxFor(model => model.Inicio, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Inicio)
+                            </div>
+
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.Fim) <span class="field-validation-error">*</span>
+                            </div>
+                            <div class="editor-field">
+                                @Html.TextBoxFor(model => model.Fim, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Fim)
+                            </div>
+
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.Traslado) <span class="field-validation-error">*</span>
+                            </div>
+                            <div class="editor-field">
+                                @Html.TextBoxFor(model => model.Traslado, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Traslado)
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.DataDe) <span class="field-validation-error">*</span>
+                            </div>    
+                            <div class="editor-field">
+                                @Html.TextBoxFor(model => model.DataDe,new {@class="form-control" })
+                                @Html.ValidationMessageFor(model => model.DataDe)
+                            </div>
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.DataAte) <span class="field-validation-error">*</span>
+                            </div>
+                            <div class="editor-field">
+                                @Html.TextBoxFor(model => model.DataAte, new { @class="form-control"})
+                                @Html.ValidationMessageFor(model => model.DataAte)
+                            </div>
+                            <div class="editor-label">
+                                @Html.LabelFor(model => model.Total) <span class="field-validation-error">*</span>
+                            </div>
+                            <div class="editor-field">
+                                @Html.TextBoxFor(model => model.Total, new { @class="form-control"})
+                                @Html.ValidationMessageFor(model => model.Total)
+                            </div>
+                        }
+                        
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Atividade) <span class="field-validation-error">*</span>
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextAreaFor(model => model.Atividade, new { @class = "form-control", @rows = 10 })
+                            @Html.ValidationMessageFor(model => model.Atividade)
+                        </div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Observacao)
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextAreaFor(model => model.Observacao, new { @class = "form-control", @rows = 5 })
+                        </div>
+                        <p style="margin: 30px 0;">
+                            <input type="submit" value="Enviar" class="btn btn-info" />
+                            |
+                            @Html.ActionLink("Listar", "Index")
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/Scripts/bootstrap.min.js")
+@Scripts.Render("~/Scripts/plugins/metisMenu/jquery.metisMenu.js")
+@Scripts.Render("~/Scripts/plugins/morris/raphael-2.1.0.min.js")
+@Scripts.Render("~/Scripts/plugins/morris/morris.js")
+@Scripts.Render("~/Scripts/sb-admin.js")
+@Scripts.Render("~/Scripts/demo/dashboard-demo.js")
+@Scripts.Render("~/Scripts/bootstrap-datepicker.js")
+@Scripts.Render("~/bundles/jquery")
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

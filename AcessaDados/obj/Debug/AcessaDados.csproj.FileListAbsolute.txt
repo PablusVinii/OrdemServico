@@ -1,0 +1,33 @@
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Debug\AcessaDados.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Debug\AcessaDados.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Debug\TransferenciaObjetos.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Debug\TransferenciaObjetos.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\obj\Debug\AcessaDados.csprojResolveAssemblyReference.cache
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\obj\Debug\AcessaDados.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\AcessaDados\obj\Debug\AcessaDados.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Debug\AcessaDados.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Debug\AcessaDados.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Debug\TransferenciaObjetos.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Debug\TRS.Apoio.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Debug\TransferenciaObjetos.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Debug\TRS.Apoio.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\obj\Debug\AcessaDados.csprojResolveAssemblyReference.cache
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\obj\Debug\AcessaDados.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\AcessaDados\obj\Debug\AcessaDados.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\bin\Debug\AcessaDados.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\bin\Debug\AcessaDados.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\bin\Debug\TransferenciaObjetos.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\bin\Debug\TRS.Apoio.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\bin\Debug\FastReport.Web.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\bin\Debug\FastReport.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\bin\Debug\TransferenciaObjetos.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\bin\Debug\TRS.Apoio.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\obj\Debug\AcessaDados.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\obj\Debug\AcessaDados.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\AcessaDados\obj\Debug\AcessaDados.pdb

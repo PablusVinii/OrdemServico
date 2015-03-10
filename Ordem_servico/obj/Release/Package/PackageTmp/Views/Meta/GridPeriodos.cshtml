@@ -1,0 +1,106 @@
+﻿@model List<TransferenciaObjetos.Periodo>
+                           
+<style>
+    .dont-work, .dont-work:hover {
+        background-color:#8470FF;
+    }
+</style>
+
+<h3>Metas mensais</h3>        
+
+<table class="table table-striped table-bordered table-hover" id="dataTables-Metas">
+    <thead>
+        <tr>
+            <th>
+                Ano
+            </th>
+            <th>
+                Mês
+            </th>
+            <th>
+               Esperado
+            </th>
+            <th>
+                Realizado
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            string status = string.Empty;
+
+            if (item.Mes > DateTime.Now.Month)
+            {
+                status = "info";
+            }
+            else if (item.Realizado == item.Esperado)
+            {
+                status = "warning";
+            }
+            else if (item.Realizado < item.Esperado)
+            {
+                status = "danger";
+            }
+            else if (item.Realizado > item.Esperado)
+            {
+                status = "success";
+            }
+                        
+            <tr class="@status">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ano)
+                </td>
+                <td>
+                    @switch (item.Mes)
+                    {
+                        case 1:
+                        <text>Janeiro</text>
+                            break;
+                        case 2:                                                            
+                        <text>Fevereiro</text>
+                            break;
+                        case 3:                                                            
+                        <text>Março</text>
+                            break;
+                        case 4:                                                            
+                        <text>Abril</text>
+                            break;
+                        case 5:                                                            
+                        <text>Maio</text>
+                            break;
+                        case 6:                                                            
+                        <text>Junho</text>
+                            break;
+                        case 7:                                                            
+                        <text>Julho</text>
+                            break;
+                        case 8:                                                            
+                        <text>Agosto</text>
+                            break;
+                        case 9:
+                        <text>Setembro</text>    
+                            break;
+                        case 10:                                                            
+                        <text>Outubro</text>
+                            break;
+                        case 11:                                                            
+                        <text>Novembro</text>
+                            break;
+                        case 12:
+                                                            
+                        <text>Dezembro</text>
+                            break;
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Esperado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Realizado)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

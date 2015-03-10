@@ -1,0 +1,211 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/themes/full-calendar/css/jquery-ui.min.css" rel="stylesheet" />
+<link href="~/Content/themes/full-calendar/css/fullcalendar.css" rel="stylesheet" />
+<link href="~/Content/themes/full-calendar/css/fullcalendar.print.css" rel="stylesheet" />
+<script src="~/Content/themes/full-calendar/js/jquery.min.js"></script>
+@Scripts.Render("~/Scripts/jquery.unobtrusive-ajax.js")
+<script src="~/Content/themes/full-calendar/js/jquery-ui.custom.min.js"></script>
+<script src="~/Content/themes/full-calendar/js/fullcalendar.min.js"></script>
+<script src="~/Scripts/jquery.loading.js"></script>
+
+<style type="text/css">
+    #calendar {
+        width: 900px;
+        margin: 0 auto;
+    }
+</style>
+
+<script type="text/javascript">
+
+    function CarregaCalendario(data) {
+        var json = $.parseJSON(data);
+
+        $('#calendar').fullCalendar('removeEvents');
+
+        if (json.length == 0) {
+            alert('Não há agendamentos para o consultor selecionado');
+        }
+        else {
+
+            evento.length = 0;
+
+            $.each(json, function (i, item) {
+
+                var from = item.DataPrevista.split("/");
+
+                var date = new Date(from[2], from[1] - 1, from[0]);
+
+                var myEvent = {
+                    title: item.InicioPrevisto + " - " + item.Cliente.Nome.substr(0, 15) + '...',
+                    start: date,
+                    url: "/Agendamento/Details?id=" + item.Codigo,
+                };
+
+                if (item.Status.Codigo == '1') {
+                    myEvent.color = 'red'
+                } else if (item.Status.Codigo == '2') {
+                    myEvent.color = 'green'
+                } else if (item.Status.Codigo == '3') {
+                    myEvent.color = 'blue';
+                } else if (item.Status.Codigo == '4') {
+                    myEvent.color = 'orange';
+                }
+
+                evento.push(myEvent);
+                $('#calendar').fullCalendar('removeEventSource', evento);
+                $("#calendar").fullCalendar('addEventSource', evento);
+                $("#calendar").fullCalendar('refetchEvents');
+
+            });
+        }
+    }
+
+    function AjaxBegin() {
+        $("#loading").css('display', 'block');
+    }
+
+    function AjaxComplete() {
+        $("#loading").css('display', 'none');
+    }
+</script>
+
+<div class="col-lg-12">
+
+    @if (Request.QueryString["st"] != null)
+    {
+        string estilo = string.Empty;
+        string mensagem = string.Empty;
+
+        string situacao = Request.QueryString["st"].ToString();
+
+        switch (situacao)
+        {
+            case "ok":
+                estilo = "alert-success";
+                mensagem = "Operação realizada com sucesso!";
+                break;
+            case "iv":
+                estilo = "alert-warning";
+                mensagem = "Informações inválidas, tente novamente.";
+                break;
+            case "sd":
+                estilo = "alert-warning";
+                mensagem = "Selecione pelo menos um dia da semana";
+                break;
+            case "er":
+                estilo = "alert-danger";
+                mensagem = "Uma falha ocorreu durante o processo";
+                break;
+        }
+
+        <div class="alert @estilo alert-dismissable" style="margin-top:30px">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            @mensagem
+        </div>
+    }
+
+    <h2 class="page-header">Consulta de Agendamentos</h2>
+    <ol class="breadcrumb">
+        <li><a href='@Url.Action("Index")'>Agendamentos</a></li>
+        <li class="active">Consulta de Agendamentos</li>
+    </ol>
+    <div class="form-group">
+
+        <div class="col-lg-8">
+            <div style="margin-bottom: 20px">
+                @Html.ActionLink("Criar Novo Agendamento", "Create", null, new { @class = "btn btn-info" })
+            </div>
+            <div id="loading" style="position: absolute; top: 30%; left: 50%; z-index: 4000; display: none">
+                <img src="~/Images/loader.gif" />
+            </div>
+
+            @{
+                AjaxOptions confAjax = new AjaxOptions();
+                confAjax.HttpMethod = "POST";
+                confAjax.OnSuccess = "CarregaCalendario";
+                confAjax.OnBegin = "AjaxBegin";
+                confAjax.OnComplete = "AjaxComplete";
+            }
+
+            @using (Ajax.BeginForm("PegarAgendamentos","Agendamento", confAjax))
+            {
+                <div style="margin-bottom: 50px">
+                    <div>
+                        <label>Recurso</label>
+                    </div>
+                    <div class="col-lg-10">
+                        @Html.DropDownList("Funcionarios", null, new { @class = "form-control"})
+                    </div>
+                    <div class="col-lg-2">
+                        <input type="submit" value="Pesquisar" class="btn btn-info" id="enviar" />
+                    </div>
+                </div>
+                <div id='calendar'></div>
+            }
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" language="javascript">
+
+    var evento = new Array();
+
+    $(document).ready(function () {
+
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+
+        $('#calendar').fullCalendar({
+            theme: true,
+            monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+            monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+            dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+            dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'],
+            buttonText: {
+                prev: '&nbsp;&#9668;&nbsp;',
+                next: '&nbsp;&#9658;&nbsp;',
+                prevYear: '&nbsp;&lt;&lt;&nbsp;',
+                nextYear: '&nbsp;&gt;&gt;&nbsp;',
+                today: 'hoje',
+                month: 'mês',
+                week: 'semana',
+                day: 'dia'
+            },
+            titleFormat: {
+                month: 'MMMM yyyy',
+                week: "d [ yyyy]{ '&#8212;'[ MMM] d MMM yyyy}",
+                day: 'dddd, d MMM, yyyy'
+            },
+            columnFormat: {
+                month: 'ddd',
+                week: 'ddd d/M',
+                day: 'dddd d/M'
+            },
+            allDayText: 'dia todo',
+            axisFormat: 'H:mm',
+            timeFormat: {
+                '': 'H(:mm)',
+                agenda: 'H:mm{ - H:mm}'
+            }
+        });
+    });
+</script>
+
+
+@{
+    if (ViewBag.Argumento == "ps")
+    {
+        int func = (int)ViewBag.Funcionario;
+        <script>
+            $(document).ready(function () {
+                var idFuncionario = @func
+                $("#Funcionarios").val(idFuncionario);
+                $("#enviar").click();
+            });
+        </script>
+    }
+}

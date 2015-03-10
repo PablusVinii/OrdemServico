@@ -1,0 +1,123 @@
+﻿@model TransferenciaObjetos.Agendamento
+
+
+<div class="col-lg-12">
+    <h2>Edição</h2>
+    <ol class="breadcrumb">
+        <li><a href='@Url.Action("Index")'>Agendamentos</a></li>
+        <li><a href='@Url.Action("Details", new { id = Model.Codigo})'>Detalhes</a></li>
+        <li class="active">Edição</li>
+    </ol>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Agendamento
+        </div>
+        <div class="panel-body">
+
+            <div class="form-group">
+                <div class="col-lg-8">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                        <dl>
+                            <dt>
+                                @Html.LabelFor(model => model.Codigo)
+                            </dt>
+                            <dd>
+                                @Html.TextBoxFor(model => model.Codigo, new { @class = "form-control", @disabled = "disabled" })
+                            </dd>
+
+                            <dt>
+                                @Html.LabelFor(model => model.Funcionario.Nome)
+                            </dt>
+                            <dd>
+                                @Html.TextBoxFor(model => model.Funcionario.Nome, new { @class = "form-control", @disabled = "disabled" })
+                            </dd>
+
+                            <dt>
+                                @Html.LabelFor(model => model.Cliente.Nome)
+                            </dt>
+                            <dd>
+                                @Html.DropDownListFor(model => model.Cliente.Codigo, new SelectList(ViewBag.Clientes, "Codigo", "Nome", Model.Cliente), new { @class = "form-control" })
+                            </dd>
+                            <dt>
+                                @Html.LabelFor(model => model.Status.Descricao)
+                            </dt>
+                            <dd>
+                                @Html.DropDownListFor(model => model.Status.Codigo, new SelectList(ViewBag.Status, "Codigo", "Descricao", Model.Status), new { @class = "form-control" })
+                            </dd>
+                            <dt>
+                                @Html.LabelFor(model => model.DataPrevista)
+                            </dt>
+                            <dd>
+                                @Html.TextBoxFor(model => model.DataPrevista, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.DataPrevista)
+                            </dd>
+
+                            <dt>
+                                @Html.LabelFor(model => model.InicioPrevisto)
+                            </dt>
+                            <dd>
+                                @Html.TextBoxFor(model => model.InicioPrevisto, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.InicioPrevisto)
+                            </dd>
+
+                            <dt>
+                                @Html.LabelFor(model => model.FimPrevisto)
+                            </dt>
+                            <dd>
+                                @Html.TextBoxFor(model => model.FimPrevisto, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.FimPrevisto)
+                            </dd>
+
+                            <dt>
+                                @Html.LabelFor(model => model.TrasladoPrevisto)
+                            </dt>
+                            <dd>
+                                @Html.TextBoxFor(model => model.TrasladoPrevisto, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.TrasladoPrevisto)
+                            </dd>
+                            <dt>
+                                @Html.LabelFor(model => model.ResumoAgendamento)
+                            </dt>
+                            <text>
+                                @Html.TextAreaFor(model => model.ResumoAgendamento, new {@class="form-control"})
+                                @Html.ValidationMessageFor(model => model.ResumoAgendamento)
+                            </text>
+                        </dl>
+                        <p>
+                            <input type="submit" value="Enviar" class="btn btn-info" />  @Html.ActionLink("Voltar", "Index")
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/Scripts/bootstrap.min.js")
+@Scripts.Render("~/Scripts/plugins/metisMenu/jquery.metisMenu.js")
+@Scripts.Render("~/Scripts/plugins/morris/raphael-2.1.0.min.js")
+@Scripts.Render("~/Scripts/plugins/morris/morris.js")
+@Scripts.Render("~/Scripts/sb-admin.js")
+@Scripts.Render("~/Scripts/demo/dashboard-demo.js")
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/Scripts/jquery.maskedinput.min.js")
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#InicioPrevisto").mask("99:99");
+        $("#FimPrevisto").mask("99:99");
+        $("#TrasladoPrevisto").mask("99:99");
+        $("#InicioConclusao").mask("99:99");
+        $("#FimConclusao").mask("99:99");
+        $("#TrasladoConclusao").mask("99:99");
+        $("#DataPrevista").mask("99/99/9999");
+        $("#DataConclusao").mask("99/99/9999");
+    });
+</script>

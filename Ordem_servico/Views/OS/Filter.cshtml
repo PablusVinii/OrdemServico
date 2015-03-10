@@ -1,0 +1,81 @@
+﻿@model TransferenciaObjetos.OrdemServico
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header">Filtrar Ordens de Serviço</h2>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Ordem de Serviço
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="col-lg-8">
+                            <div class="col-lg-6">
+                                <div class="editor-label">
+                                    @Html.LabelFor(model => model.DataDe)
+                                </div>
+                                <div class="editor-field">
+                                    @Html.TextBoxFor(model => model.DataDe, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="editor-label">
+                                    @Html.LabelFor(model => model.DataAte)
+                                </div>
+                                <div class="editor-field">
+                                    @Html.TextBoxFor(model => model.DataAte, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="editor-label">
+                                    @Html.LabelFor(model => model.Cliente)
+                                </div>
+                                <div class="editor-field">
+                                    @Html.DropDownListFor(model => model.Cliente.Codigo, (List<SelectListItem>)ViewBag.Clientes, new { @class = "form-control" })
+                                </div>
+                                @{
+                                    TransferenciaObjetos.Autenticacao.Usuario umUsuario = (TransferenciaObjetos.Autenticacao.Usuario)Session["UsuarioLogado"];
+                                }
+
+                                @if (umUsuario.IsAdministrador)
+                                {                 
+                                    <div class="editor-label">
+                                        @Html.LabelFor(model => model.Funcionario)
+                                    </div>
+                                    <div class="editor-field">
+                                        @Html.DropDownListFor(model => model.Funcionario.Codigo, (List<SelectListItem>)ViewBag.Funcionarios, new { @class = "form-control" })
+                                    </div>
+                                }
+
+                                <p style="margin: 30px 0;">
+                                    <input type="submit" value="Pesquisar" class="btn btn-info" />
+                                </p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        var data = new Date();
+        var dia = data.getDate();
+        var mes = data.getMonth() + 1;
+        var ano = data.getFullYear();
+
+        $("#DataDe").datepicker({ format: 'dd/mm/yyyy' }).val(dia + "/" + mes + "/" + ano);
+        $("#DataAte").datepicker({ format: 'dd/mm/yyyy' }).val(dia + "/" + mes + "/" + ano);
+    });
+</script>
+
+@Scripts.Render("~/Scripts/bootstrap-datepicker.js")
+
+
+
+
+

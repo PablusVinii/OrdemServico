@@ -1,0 +1,25 @@
+﻿/* ********************************************************************* 
+//
+// TRS Sistemas - Runtime Library Functions }
+//
+// Copyright(c) 2006-2014 TRS Sistemas e Soluções em Informática Ltda. 
+//
+// Author: Júlio César Souza Murta
+// Data: 14/05/2014
+// ********************************************************************* 
+// Neste arquivo devem ser adicionados os estilos adicionais
+//
+// ********************************************************************* 
+// Data última alteração: 
+// Últimas alterações: 
+//
+// ********************************************************************* */
+
+
+/*  A classe padrão utilizada pelo mecanismo de validação do ASP.Net MVC foi sobrescrita 
+    para suportar a formatação em cor vermelha
+*/
+.field-validation-error {
+    color:red;
+}
+

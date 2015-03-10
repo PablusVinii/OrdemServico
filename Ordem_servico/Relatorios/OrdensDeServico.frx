@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="05/16/2014 16:32:22" ReportInfo.Modified="06/26/2014 13:15:54" ReportInfo.CreatorVersion="2014.2.3.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport                            
+{
+  public class ReportScript
+  {                                        
+
+    private void Cell34_BeforePrint(object sender, EventArgs e)
+    {                                                                             
+      string inicio = ((String)Report.GetColumnValue(&quot;MinhaConsulta.INICIO&quot;)).Insert(2,&quot;:&quot;);
+      string fim =  ((String)Report.GetColumnValue(&quot;MinhaConsulta.FIM&quot;)).Insert(2,&quot;:&quot;);
+      int traslado = ((int)Report.GetColumnValue(&quot;MinhaConsulta.TRANSLADO&quot;));                                               
+  
+      DateTime dtInicio = Convert.ToDateTime(inicio);  
+      DateTime dtFim = Convert.ToDateTime(fim);
+      DateTime dtTraslado = Convert.ToDateTime(traslado.ToString().Insert(1,&quot;:&quot;));
+                                                                 
+
+      TimeSpan tsTotal = (dtFim - dtInicio).Add(dtTraslado.TimeOfDay);
+
+      DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0);
+      Cell42.Text = origin.AddSeconds(tsTotal.TotalSeconds).ToString(&quot;hh:mm&quot;);    
+    }
+
+    private void Inicio_BeforePrint(object sender, EventArgs e)
+    {
+      Inicio.Text = ((String)Report.GetColumnValue(&quot;MinhaConsulta.INICIO&quot;)).Insert(2,&quot;:&quot;);
+    }
+
+    private void Fim_BeforePrint(object sender, EventArgs e)
+    {
+      Fim.Text =  ((String)Report.GetColumnValue(&quot;MinhaConsulta.FIM&quot;)).Insert(2,&quot;:&quot;);
+    }
+
+    private void Translado_BeforePrint(object sender, EventArgs e)
+    {                                                                                  
+      string traslado = string.Format(&quot;{0:0000}&quot;, Report.GetColumnValue(&quot;MinhaConsulta.TRANSLADO&quot;)).Insert(2,&quot;:&quot;);
+      Translado.Text = traslado; 
+    }
+
+    private void Cell44_BeforePrint(object sender, EventArgs e)
+    {
+      Cell44.Text = ((DateTime)Report.GetColumnValue(&quot;MinhaConsulta.DATA&quot;)).ToString(&quot;dd/MM/yyyy&quot;);
+    }
+  }
+}
+</ScriptText>
+  <Dictionary>
+    <OdbcDataConnection Name="Connection" ConnectionString="rijcmlqBVz7t4YFy/FS+/6eaabd5SNDFvkKPOtvUP0ORLQuL7eqRP5iG/84OfbNVpolYU/nqYqROsGklpSi79dyrSHeZ18LQfGqurrH2EyrUa5BeIkdR3++AyTLeDzvU97j+tv8nE10zTlJidkNNq87oUhCj2U64ZaithYIYV38lX0iXjRF3s/UHSZh5BqeBcGlqSmjB3hTmLmUoszPnI8DIT68yA==">
+      <TableDataSource Name="Table" Alias="MinhaConsulta" DataType="System.Int32" Enabled="true" SelectCommand="SELECT O.CLIENTE, O.FUNCIONARIO, O.DATA, O.INICIO, O.FIM, O.TRANSLADO, O.ATIVIDADE, C.CODIGO AS CODIGOCLIENTE, C.NOME AS NOMECLIENTE, F.NOME AS NOMEFUNCIONARIO, F.CODIGO AS CODIGOFUNCIONARIO, F.DATACADASTRO, O.CODIGO AS CODIGOOS&#13;&#10;FROM (&quot;ORDEM_SERVICO&quot; O INNER JOIN &quot;CLIENTES&quot; C ON O.CLIENTE = C.CODIGO &#13;&#10;) INNER JOIN &quot;FUNCIONARIOS&quot; F ON O.FUNCIONARIO = F.CODIGO &#13;&#10;&#13;&#10;">
+        <Column Name="CLIENTE" DataType="System.Int32"/>
+        <Column Name="FUNCIONARIO" DataType="System.Int32"/>
+        <Column Name="DATA" DataType="System.DateTime"/>
+        <Column Name="INICIO" DataType="System.String"/>
+        <Column Name="FIM" DataType="System.String"/>
+        <Column Name="TRANSLADO" DataType="System.String"/>
+        <Column Name="ATIVIDADE" DataType="System.String"/>
+        <Column Name="CODIGOCLIENTE" DataType="System.Int32"/>
+        <Column Name="NOMECLIENTE" DataType="System.String"/>
+        <Column Name="NOMEFUNCIONARIO" DataType="System.String"/>
+        <Column Name="CODIGOFUNCIONARIO" DataType="System.Int32"/>
+        <Column Name="DATACADASTRO" DataType="System.DateTime"/>
+        <Column Name="CODIGOOS" DataType="System.Int32"/>
+      </TableDataSource>
+    </OdbcDataConnection>
+    <Parameter Name="parametro" DataType="System.Int32" Expression="0"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Border.Lines="Top, Bottom" FinishPageEvent="Cell34_BeforePrint">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="230.58" BeforeLayoutEvent="ReportTitle1_BeforeLayout">
+      <PictureObject Name="Picture1" Left="-9450" Top="-9450" Width="75.6" Height="75.6" Image=""/>
+      <PictureObject Name="Picture2" Left="160.65" Top="28.35" Width="378" Height="141.75" Image="iVBORw0KGgoAAAANSUhEUgAAAcQAAACKCAYAAAA0ejq3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADJGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjM4NTgxM0IxMjExMTExRTI4MTU3OUU5RjdCQTc2RDM0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjM4NTgxM0IyMjExMTExRTI4MTU3OUU5RjdCQTc2RDM0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Mzg1ODEzQUYyMTExMTFFMjgxNTc5RTlGN0JBNzZEMzQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Mzg1ODEzQjAyMTExMTFFMjgxNTc5RTlGN0JBNzZEMzQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tl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"/>
+      <RichObject Name="Rich1" Top="170.1" Width="718.2" Height="28.35" Border.Lines="Bottom" Text="{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Tahoma;}}&#13;&#10;{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\b\fs40 Ordem de Servi\'e7o\b0\f1\fs17\par&#13;&#10;}&#13;&#10;"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="234.58" Width="718.2"/>
+    <DataBand Name="Data1" Top="238.58" Width="718.2" Height="245.7" BeforePrintEvent="Data1_BeforePrint" BeforeLayoutEvent="Data1_BeforeLayout" DataSource="Table">
+      <TextObject Name="Text1" Top="207.9" Width="708.75" Height="28.35" CanGrow="true" Text="[MinhaConsulta.ATIVIDADE]" HorzAlign="Justify" Font="Arial, 12pt"/>
+      <RichObject Name="Rich2" Top="160.65" Width="718.2" Height="37.8" Border.Lines="Bottom" Text="{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Tahoma;}}&#13;&#10;{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\b\fs40 Descri\'e7\'e3o da(s) Atividade(s)\b0\f1\fs17\par&#13;&#10;}&#13;&#10;"/>
+      <ShapeObject Name="Shape1" Width="718.2" Height="41.58"/>
+      <TableObject Name="Table1" Left="9.45" Top="9.45" Width="585.02" Height="23.61">
+        <TableColumn Name="Column1" Width="85.03"/>
+        <TableColumn Name="Column2" Width="499.99"/>
+        <TableRow Name="Row1" Height="23.61">
+          <TableCell Name="Cell1" Text="Cliente:" Font="Arial, 14.25pt, style=Bold"/>
+          <TableCell Name="Cell2" Text="[MinhaConsulta.NOMECLIENTE]" Font="Arial, 14.25pt, style=Italic"/>
+        </TableRow>
+      </TableObject>
+      <ShapeObject Name="Shape2" Top="47.25" Width="350.03" Height="41.58"/>
+      <ShapeObject Name="Shape3" Left="349.65" Top="47.25" Width="369.31" Height="41.58"/>
+      <ShapeObject Name="Shape4" Top="94.5" Width="181.44" Height="41.58"/>
+      <ShapeObject Name="Shape5" Left="179.55" Top="94.5" Width="170.5" Height="41.58"/>
+      <ShapeObject Name="Shape6" Left="349.65" Top="94.5" Width="180.68" Height="41.58"/>
+      <ShapeObject Name="Shape7" Left="529.2" Top="94.5" Width="187.87" Height="41.58"/>
+      <TableObject Name="Table4" Left="9.45" Top="103.95" Width="160.64" Height="28.35">
+        <TableColumn Name="Column15" Width="80.32"/>
+        <TableColumn Name="Column16" Width="80.32"/>
+        <TableRow Name="Row4" Height="28.35">
+          <TableCell Name="Cell35" Text="Início:" Font="Arial, 14.25pt, style=Bold"/>
+          <TableCell Name="Inicio" BeforePrintEvent="Inicio_BeforePrint" Text="[MinhaConsulta.INICIO]" Font="Arial, 14.25pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table1" Left="189" Top="103.95" Width="151.2" Height="28.35">
+        <TableColumn Name="Column17" Width="75.6"/>
+        <TableColumn Name="Column18" Width="75.6"/>
+        <TableRow Name="Row5" Height="28.35">
+          <TableCell Name="Cell37" Text="Fim:" Font="Arial, 14.25pt, style=Bold"/>
+          <TableCell Name="Fim" BeforePrintEvent="Fim_BeforePrint" Text="[MinhaConsulta.FIM]" Font="Arial, 14.25pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table1" Left="359.1" Top="103.95" Width="151.2" Height="28.35">
+        <TableColumn Name="Column19" Width="75.6"/>
+        <TableColumn Name="Column20" Width="75.6"/>
+        <TableRow Name="Row6" Height="28.35">
+          <TableCell Name="Cell39" Text="Tras.:" Font="Arial, 14.25pt, style=Bold"/>
+          <TableCell Name="Translado" BeforePrintEvent="Translado_BeforePrint" Text="[MinhaConsulta.TRANSLADO]" Font="Arial, 14.25pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table1" Left="538.65" Top="103.95" Width="151.2" Height="28.35">
+        <TableColumn Name="Column21" Width="75.6"/>
+        <TableColumn Name="Column22" Width="75.6"/>
+        <TableRow Name="Row7" Height="28.35">
+          <TableCell Name="Cell41" Text="Total:" Font="Arial, 14.25pt, style=Bold"/>
+          <TableCell Name="Cell42" BeforePrintEvent="Cell34_BeforePrint" Font="Arial, 14.25pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table1" Left="9.45" Top="56.7" Width="245.65" Height="28.35">
+        <TableColumn Name="Column23" Width="80.3"/>
+        <TableColumn Name="Column24" Width="165.35"/>
+        <TableRow Name="Row8" Height="28.35">
+          <TableCell Name="Cell43" Text="Data:" Font="Arial, 14.25pt, style=Bold"/>
+          <TableCell Name="Cell44" BeforePrintEvent="Cell44_BeforePrint" Text="[MinhaConsulta.DATA]" Font="Arial, 14.25pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table1" Left="359.1" Top="56.7" Width="340.23" Height="28.35">
+        <TableColumn Name="Column25" Width="118.15"/>
+        <TableColumn Name="Column26" Width="222.08"/>
+        <TableRow Name="Row9" Height="28.35">
+          <TableCell Name="Cell45" Text="Consultor:" Font="Arial, 14.25pt, style=Bold"/>
+          <TableCell Name="Cell46" BeforePrintEvent="FormataHora_BeforePrint" Text="[MinhaConsulta.NOMEFUNCIONARIO]" Font="Arial, 14.25pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="488.28" Width="718.2" Height="56.7">
+      <RichObject Name="Rich3" Width="718.2" Height="47.25" Text="{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}&#13;&#10;{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\b\f0\fs24        ____________________________                 ___________________________\par&#13;&#10;TRS Sistemas                                                  Cliente\fs17\par&#13;&#10;}&#13;&#10;"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,5 @@
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Debug\Murta.OrdemServico.Bll.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Debug\Murta.OrdemServico.Bll.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\obj\Debug\Murta.OrdemServico.Bll.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\obj\Debug\Murta.OrdemServico.Bll.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\obj\Debug\Murta.OrdemServico.Bll.pdb

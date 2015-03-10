@@ -1,0 +1,16 @@
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\TransferenciaObjetos\bin\Debug\TransferenciaObjetos.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\TransferenciaObjetos\bin\Debug\TransferenciaObjetos.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\TransferenciaObjetos\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\TransferenciaObjetos\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\TransferenciaObjetos\obj\Debug\TransferenciaObjetos.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\TransferenciaObjetos\obj\Debug\TransferenciaObjetos.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaObjetos\bin\Debug\TransferenciaObjetos.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaObjetos\bin\Debug\TransferenciaObjetos.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaObjetos\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaObjetos\bin\Debug\TRS.Apoio.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaObjetos\bin\Debug\TRS.Apoio.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaObjetos\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaObjetos\obj\Debug\TransferenciaObjetos.csprojResolveAssemblyReference.cache
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaObjetos\obj\Debug\TransferenciaObjetos.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaObjetos\obj\Debug\TransferenciaObjetos.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\TransferenciaObjetos\obj\Debug\TransferenciaObjetos.csprojResolveAssemblyReference.cache

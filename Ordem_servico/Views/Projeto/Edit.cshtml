@@ -1,0 +1,101 @@
+﻿@model TransferenciaObjetos.Projeto
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#HorasGerente").mask("9999:99");
+        $("#HorasCoordenador").mask("9999:99");
+        $("#HorasConsultor").mask("9999:99");
+    });
+</script>
+
+<div class="col-lg-12">
+    <h2>Edição</h2>
+    <ol class="breadcrumb">
+        <li><a href='@Url.Action("Index")'>Projetos</a></li>
+        <li class="active">Edição</li>
+    </ol>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Projetos
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <div class="col-lg-8">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.ValidationSummary(true)
+
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Descricao)
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextBoxFor(model => model.Descricao, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Descricao)
+                        </div>
+                        <div class="editor-class">
+                            @Html.LabelFor(model => model.Cliente)
+                        </div>
+                        <div class="editor-class">
+                            @Html.DropDownListFor(model => model.Cliente.Codigo, (List<SelectListItem>)ViewBag.Clientes, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Cliente.Codigo)
+                        </div>
+                              
+                        <div class="editor-class">
+                            @Html.LabelFor(model => model.Meta)
+                        </div>
+                        <div class="editor-class">
+                            @Html.DropDownListFor(model => model.Meta.Codigo, (List<SelectListItem>)ViewBag.Metas, new { @class = "form-control" })
+                        </div>
+                           
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.HorasGerente)
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextBoxFor(model => model.HorasGerente, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.HorasGerente)
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.HorasCoordenador)
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextBoxFor(model => model.HorasCoordenador, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.HorasCoordenador)
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.HorasConsultor)
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextBoxFor(model => model.HorasConsultor, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.HorasConsultor)
+                        </div>
+
+                        <p style="margin: 30px 0;">
+                            <input type="submit" value="Enviar" class="btn btn-info"/>
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    @Html.ActionLink("Pesquisar", "Index")
+</div>
+
+
+@Scripts.Render("~/Scripts/bootstrap.min.js")
+@Scripts.Render("~/Scripts/plugins/metisMenu/jquery.metisMenu.js")
+@Scripts.Render("~/Scripts/plugins/morris/raphael-2.1.0.min.js")
+@Scripts.Render("~/Scripts/plugins/morris/morris.js")
+@Scripts.Render("~/Scripts/sb-admin.js")
+@Scripts.Render("~/Scripts/demo/dashboard-demo.js")
+@Scripts.Render("~/Scripts/bootstrap-datepicker.js")
+@Scripts.Render("~/bundles/jquery")
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

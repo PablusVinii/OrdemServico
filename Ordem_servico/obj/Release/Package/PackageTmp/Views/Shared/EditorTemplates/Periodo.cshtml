@@ -1,0 +1,33 @@
+﻿@model TransferenciaObjetos.Periodo
+
+<!--div class="col-lg-4">
+    <div class="editor-label">
+        @*Html.LabelFor(model => model.Ano)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Ano, new { @class = "form-control", @disabled=true })
+        @Html.ValidationMessageFor(model => model.Ano)
+    </div>
+</!--div>
+<div class="col-lg-4">
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Mes)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Mes, new { @class = "form-control", @disabled=true })
+        @Html.ValidationMessageFor(model => model.Mes)*@
+    </div>
+</div-->
+@Html.HiddenFor(model => model.Ano)
+@Html.HiddenFor(model => model.Mes)
+<div class="col-lg-6">
+    <div class="editor-label">
+        <label>
+            @Model.NomeMes
+        </label>
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Esperado, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Esperado)
+    </div>
+</div>

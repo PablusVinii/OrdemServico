@@ -1,0 +1,108 @@
+﻿@model TransferenciaObjetos.Agendamento
+
+<script type="text/javascript" language="javascript">
+    jQuery(function ($) {
+        $("#InicioConclusao").mask("99:99");
+        $("#FimConclusao").mask("99:99");
+        $("#TrasladoConclusao").mask("99:99");
+
+        $("#DataConclusao").datepicker({
+            format: 'mm/dd/yyyy'
+        }).addClass('form-control');
+    });
+</script>
+
+<div class="col-lg-12">
+    <h2>Alterar Status</h2>
+    <ol class="breadcrumb">
+        <li><a href='@Url.Action("Index")'>Agendamentos</a></li>
+        <li><a href='@Url.Action("Details", new { id = Model.Codigo })'>Detalhes</a></li>
+        <li class="active">Alterar Status</li>
+    </ol>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Agendamento
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <div class="col-lg-8">
+                    <dl>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Codigo)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Codigo)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Funcionario.Nome)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Funcionario.Nome)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Cliente.Nome)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Cliente.Nome)
+                        </dd>
+
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true)
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.DataConclusao)
+                            </dt>
+                            <dd>
+                                @Html.TextBoxFor(model => model.DataConclusao, new { @class = "form-control" })
+                            </dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.InicioConclusao)
+                            </dt>
+                            <dd>
+                                @Html.TextBoxFor(model => model.InicioConclusao, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.InicioConclusao)
+
+                            </dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.FimConclusao)
+                            </dt>
+                            <dd>
+                                @Html.TextBoxFor(model => model.FimConclusao, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.FimConclusao)
+                            </dd>
+                            <dt>
+                                @Html.DisplayNameFor(model => model.TrasladoConclusao)
+                            </dt>
+                            <dd>
+                                @Html.TextBoxFor(model => model.TrasladoConclusao, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.TrasladoConclusao)
+                            </dd>
+                            <dt>
+                                @Html.Label("Status")
+                            </dt>
+                            <dd>
+                                @Html.DropDownList("Status", null, "Selecione um status", new { @class = "form-control" })
+                                @Html.ValidationMessage("Status")
+                                <p style="margin: 30px 0;">
+                                    <input type="submit" value="Enviar" class="btn btn-info" />
+                                </p>
+                            </dd>
+                        }
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@Scripts.Render("~/Scripts/bootstrap.min.js")
+@Scripts.Render("~/Scripts/plugins/metisMenu/jquery.metisMenu.js")
+@Scripts.Render("~/Scripts/plugins/morris/raphael-2.1.0.min.js")
+@Scripts.Render("~/Scripts/plugins/morris/morris.js")
+@Scripts.Render("~/Scripts/sb-admin.js")
+@Scripts.Render("~/Scripts/demo/dashboard-demo.js")
+@Scripts.Render("~/Scripts/bootstrap-datepicker.js")
+@Scripts.Render("~/bundles/jquery")
+
+

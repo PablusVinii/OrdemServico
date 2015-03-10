@@ -1,0 +1,189 @@
+﻿@model TransferenciaObjetos.OrdemServico
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-lg-12">
+
+    <h2>Detalhes</h2>
+    <ol class="breadcrumb">
+        <li><a href='@Url.Action("Index")'>Ordem de Serviço</a></li>
+        <li class="active">Detalhes</li>
+    </ol>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Ordem de Serviço
+        </div>
+        <div class="panel-body">
+            <dl>
+
+                <dt>
+                    @Html.DisplayNameFor(mdoel => Model.Remoto)
+                </dt>
+                <dd>
+                   @if (Model.Remoto)
+                   {
+                       <span>Sim</span>                   
+                   }
+                   else
+                   {
+                       <span>Não</span>
+                   }                               
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Faturado)
+                </dt>
+                <dd>
+                    @if (Model.Faturado)
+                    {
+                        <span>Sim</span>
+                    }
+                    else
+                    {
+                        <span>Não</span>
+                    }
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Codigo)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Codigo)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Status.Descricao)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Status.Descricao)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Cliente.Nome)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Cliente.Nome)
+                </dd>
+                @{
+                    TransferenciaObjetos.Autenticacao.Usuario umUsuario = (TransferenciaObjetos.Autenticacao.Usuario)Session["UsuarioLogado"];
+                    if (umUsuario.IsAdministrador)
+                    {
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Funcionario.Nome)
+                    </dt>                        
+                    <dd>
+                        @Html.DisplayFor(model => model.Funcionario.Nome)
+                    </dd>
+                    }
+                }
+               
+                <dt>
+                    @Html.DisplayNameFor(model => model.Projeto)
+                </dt>
+                @{
+                    if (Model.Projeto.Codigo != 0)
+                    {
+                        <dd>
+                            @Html.DisplayFor(model => model.Projeto.Descricao)
+                        </dd>
+                    }
+                    else
+                    {
+                        <dd>
+                            Sem projeto
+                        </dd>   
+                    }
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.TipoHora.Descricao)
+                    </dt>
+                    if (Model.TipoHora.Codigo != 0)
+                    {
+                     
+                        <dd>
+                            @Html.DisplayFor(model => model.TipoHora.Descricao)
+                        </dd>
+                    }
+                    else
+                    {
+                        <dd>
+                            Sem tipo de hora
+                        </dd>   
+                    }
+                    
+                }
+
+                @if (!Model.Remoto)
+                {                    
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Data)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Data)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Inicio)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Inicio)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Fim)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Fim)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Traslado)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Traslado)
+                    </dd>
+                }
+                else
+                {
+                    <dt>
+                        @Html.DisplayNameFor(model => model.DataDe)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.DataDe)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.DataAte)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.DataAte)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Total)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Total)
+                    </dd>
+                }
+                <dt>
+                    @Html.DisplayNameFor(model => model.Atividade)
+                </dt>
+                <text>
+                    @Html.DisplayFor(model => model.Atividade)
+                </text>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Observacao)
+                </dt>
+                <text>
+                    @Html.DisplayFor(model => model.Observacao)
+                </text>
+            </dl>
+
+        </div>
+    </div>
+    <p>
+        @Html.ActionLink("Editar", "Edit", new { id = Model.Codigo }, new { @class = "btn btn-info" }) |
+        @Html.ActionLink("Ver Relatório", "ViewReport", new { id = Model.Codigo }) |   
+        @Html.ActionLink("Voltar", "Index")
+    </p>
+</div>
+
+
+
+
+

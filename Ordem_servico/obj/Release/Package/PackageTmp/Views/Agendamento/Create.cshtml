@@ -1,0 +1,85 @@
+﻿@model Ordem_servico.Models.AgendamentosConsultor
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/Scripts/jquery-1.10.2.js")
+<script src="~/Scripts/jquery.maskedinput.min.js"></script>
+<script src="~/Scripts/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#Agendamentos_0__InicioPrevisto").mask("99:99");
+        $("#Agendamentos_0__FimPrevisto").mask("99:99");
+        $("#Agendamentos_0__TrasladoPrevisto").mask("99:99");
+        $("#Agendamentos_0__InicioPrevisto").val("09:00");
+        $("#Agendamentos_0__FimPrevisto").val("18:00");
+        $("#Agendamentos_0__TrasladoPrevisto").val("01:00");
+        $("#Agendamentos_0__DataDe").datepicker({ format: 'dd/mm/yyyy' });
+        $("#Agendamentos_0__DataFim").datepicker({ format: 'dd/mm/yyyy' });
+        var data = new Date();
+        var dia = data.getDate();
+        var mes = data.getMonth() + 1;
+        var ano = data.getFullYear();
+
+        $("#Agendamentos_0__DataDe").val(dia +"/" + mes +"/" + ano);
+        $("#Agendamentos_0__DataFim").val(dia + "/" + mes + "/" + ano);
+    });
+</script>
+
+<div class="col-lg-12">
+    <h2>Cadastro</h2>
+    <ol class="breadcrumb">
+        <li><a href='@Url.Action("Index")'>Agendamentos</a></li>
+        <li class="active">Cadastro</li>
+    </ol>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Ordem de Serviço
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <div class="col-lg-8">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+
+                        <div>
+                            @Html.LabelFor(model => model.Cliente)
+                        </div>
+                        <div>
+                            @Html.DropDownListFor(model => model.Cliente.Codigo, new SelectList(Model.ClientesSelecionaveis, "Value", "Text", Model.Cliente), new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Cliente.Codigo)
+                        </div>
+
+                     
+                        TransferenciaObjetos.Autenticacao.Usuario umUsuario = (TransferenciaObjetos.Autenticacao.Usuario)Session["UsuarioLogado"];
+
+                        if (umUsuario.IsAdministrador)
+                        {
+                            <div>
+                                @Html.LabelFor(model => model.Funcionario.Nome)
+                            </div>
+                            <div>
+                                @Html.DropDownListFor(model => model.Funcionario.Codigo, new SelectList(Model.FuncionariosSelecionaveis, "Value", "Text", Model.Funcionario), new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Funcionario.Codigo)
+                            </div>
+                        }
+                        
+                        @Html.EditorFor(model => model.Agendamentos)
+                  
+                        <p style="margin: 30px 0;">
+                            <input type="submit" value="Enviar" class="btn btn-info" />
+                            @Html.ActionLink("Voltar", "Index")
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

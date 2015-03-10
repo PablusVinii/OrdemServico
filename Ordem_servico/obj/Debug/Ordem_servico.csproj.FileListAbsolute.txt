@@ -1,0 +1,160 @@
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Ordem_servico.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Ordem_servico.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Antlr3.Runtime.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\EntityFramework.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Microsoft.Data.Edm.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Microsoft.Data.OData.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Negocio.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Newtonsoft.Json.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Net.Http.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Net.Http.Formatting.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Net.Http.WebRequest.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Spatial.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Helpers.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Http.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Http.OData.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Http.WebHost.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Mvc.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Optimization.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Razor.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.WebPages.Deployment.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.WebPages.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.WebPages.Razor.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\TransferenciaObjetos.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\TRS.Apoio.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\WebGrease.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\WebMatrix.Data.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\WebMatrix.WebData.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\AcessaDados.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Negocio.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\TransferenciaObjetos.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\TRS.Apoio.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\EntityFramework.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Newtonsoft.Json.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Net.Http.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Net.Http.Formatting.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Net.Http.WebRequest.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Helpers.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Http.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Http.WebHost.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Mvc.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Razor.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.WebPages.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.WebPages.Deployment.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.WebPages.Razor.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\WebMatrix.Data.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\WebMatrix.WebData.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Web.Http.OData.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Microsoft.Data.Edm.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\Microsoft.Data.OData.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\System.Spatial.xml
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\AcessaDados.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\de\System.Spatial.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\es\System.Spatial.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\fr\System.Spatial.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\it\System.Spatial.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\ja\System.Spatial.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\ko\System.Spatial.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\ru\System.Spatial.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\obj\Debug\Ordem_servico.csprojResolveAssemblyReference.cache
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\obj\Debug\Ordem_servico.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Ordem_servico\obj\Debug\Ordem_servico.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Ordem_servico.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Ordem_servico.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Antlr3.Runtime.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\EntityFramework.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Microsoft.Data.Edm.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Microsoft.Data.OData.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Negocio.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Newtonsoft.Json.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Spatial.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.Helpers.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.Http.OData.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.Mvc.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.Optimization.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.Razor.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.WebPages.Deployment.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.WebPages.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.WebPages.Razor.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\TransferenciaObjetos.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\TRS.Apoio.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\WebGrease.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\WebMatrix.Data.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\WebMatrix.WebData.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\AcessaDados.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Negocio.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\TransferenciaObjetos.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\TRS.Apoio.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.Mvc.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\EntityFramework.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Newtonsoft.Json.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.Helpers.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.Razor.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.WebPages.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.WebPages.Deployment.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.WebPages.Razor.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\WebMatrix.Data.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\WebMatrix.WebData.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Web.Http.OData.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Microsoft.Data.Edm.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\Microsoft.Data.OData.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\System.Spatial.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\AcessaDados.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\de\System.Spatial.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\es\System.Spatial.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\fr\System.Spatial.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\it\System.Spatial.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\ja\System.Spatial.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\ko\System.Spatial.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\ru\System.Spatial.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\obj\Debug\Ordem_servico.csprojResolveAssemblyReference.cache
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\obj\Debug\Ordem_servico.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\obj\Debug\Ordem_servico.pdb

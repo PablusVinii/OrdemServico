@@ -1,0 +1,26 @@
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\bin\Release\Negocio.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\bin\Release\Negocio.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\bin\Release\AcessaDados.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\bin\Release\TransferenciaObjetos.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\bin\Release\AcessaDados.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\bin\Release\TransferenciaObjetos.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\obj\Release\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\obj\Release\Negocio.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\obj\Release\Negocio.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\bin\Release\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\bin\Release\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\bin\Release\TRS.Apoio.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\Negocio\bin\Release\TRS.Apoio.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Release\Negocio.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Release\Negocio.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Release\AcessaDados.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Release\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Release\TransferenciaObjetos.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Release\TRS.Apoio.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Release\AcessaDados.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Release\TransferenciaObjetos.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Release\TRS.Apoio.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Release\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\obj\Release\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\obj\Release\Negocio.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\obj\Release\Negocio.pdb

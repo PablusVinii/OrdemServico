@@ -1,0 +1,15 @@
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\Murta.OrdemServico.Dal.dll.config
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\Murta.OrdemServico.Dal.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\Murta.OrdemServico.Dal.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\Dapper.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\Dapper.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\Dapper.xml
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\obj\Debug\Murta.OrdemServico.Dal.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\obj\Debug\Murta.OrdemServico.Dal.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\obj\Debug\Murta.OrdemServico.Dal.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\Murta.Dto.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\Murta.QueryFactor.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\Murta.Dto.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Debug\Murta.QueryFactor.pdb

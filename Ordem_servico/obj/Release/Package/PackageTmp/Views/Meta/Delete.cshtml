@@ -1,0 +1,66 @@
+﻿@model TransferenciaObjetos.Meta
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-12">
+    <h2>Detalhes</h2>
+    <ol class="breadcrumb">
+        <li><a href='@Url.Action("Index")'>Metas</a></li>
+        <li class="active">Excluir</li>
+    </ol>
+    <div class="alert alert-warning">Você realmente deseja excluir este registro?</div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Metas
+        </div>
+        <div class="panel-body">
+            <dl>
+                <dt>
+                     @Html.DisplayNameFor(model => model.Codigo)
+                </dt>
+                <dd>
+                     @Html.DisplayFor(model => model.Codigo)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Descricao)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Descricao)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.DataCadastro)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.DataCadastro)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Indicador.Descricao)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Indicador.Descricao)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Funcionario.Nome)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Funcionario.Nome)
+                </dd>
+            </dl>
+              
+            @Html.Partial("GridPeriodos",Model.Periodos)
+
+            @using (Html.BeginForm()) {
+                <p>
+                    <input type="submit" value="Excluir" class="btn btn-info" /> |
+                    @Html.ActionLink("Voltar", "Index")
+                </p>
+            }
+        </div>
+    </div>
+</div>
+
+
+

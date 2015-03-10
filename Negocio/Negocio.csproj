@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7A64E47-EA60-44A5-A0B2-4B1593AD812B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Negocio</RootNamespace>
+    <AssemblyName>Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=4.1.5.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AcessaDados\bin\Release\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgendamentoBUS.cs" />
+    <Compile Include="ClienteBUS.cs" />
+    <Compile Include="EmpresaBUS.cs" />
+    <Compile Include="FilialBUS.cs" />
+    <Compile Include="FuncionarioBUS.cs" />
+    <Compile Include="IAgendamentoNegocio.cs" />
+    <Compile Include="IFilialNegocio.cs" />
+    <Compile Include="IIndicadorNegocio.cs" />
+    <Compile Include="IMetaNegocio.cs" />
+    <Compile Include="IndicadorBUS.cs" />
+    <Compile Include="INegocio.cs" />
+    <Compile Include="IOrdemServicoNegocio.cs" />
+    <Compile Include="IPeriodoNegocio.cs" />
+    <Compile Include="IProjetoNegocio.cs" />
+    <Compile Include="IStatusNegocio.cs" />
+    <Compile Include="IStatusOrdemServicoNegocio.cs" />
+    <Compile Include="ITipoHoraNegocio.cs" />
+    <Compile Include="MetaBUS.cs" />
+    <Compile Include="OrdemServicoBUS.cs" />
+    <Compile Include="OrdemServicoRemotoBUS.cs" />
+    <Compile Include="PeriodoBUS.cs" />
+    <Compile Include="ProjetoBUS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusBUS.cs" />
+    <Compile Include="StatusOrdemServicoBUS.cs" />
+    <Compile Include="TipoHoraBUS.cs" />
+    <Compile Include="UsuarioBUS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcessaDados\AcessaDados.csproj">
+      <Project>{a83e437a-bfbe-43ad-93cb-95ae7bd6249a}</Project>
+      <Name>AcessaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransferenciaObjetos\TransferenciaObjetos.csproj">
+      <Project>{508f65fb-a5a4-4479-b034-bfbd5ee57a6a}</Project>
+      <Name>TransferenciaObjetos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TRS.Apoio\TRS.Apoio.csproj">
+      <Project>{c2c6a93e-088a-452e-b190-1364e2d31670}</Project>
+      <Name>TRS.Apoio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
