@@ -31,9 +31,12 @@ namespace Murta.OrdemServico.Dal.Repositories
         {
             var resultado = this.repository.Query<Filial>(Databaseoperation.Select, (List<string> nomesParametros) =>
             {
-                // TODO Preencher parâmetros desta query
-                throw new NotImplementedException();
+                KeyValuePair<string, object> idParametro = new KeyValuePair<string, object>(nomesParametros[0], id);
+                IDictionary<string, object> parametros = new Dictionary<string, object>();
+                parametros.Add(idParametro);
+                return parametros;
             });
+
             return resultado.Mapper<Filial>().FirstOrDefault();
         }
 
@@ -41,8 +44,13 @@ namespace Murta.OrdemServico.Dal.Repositories
         {
             this.repository.Execute<Filial>(Databaseoperation.Insert, (List<string> nomesParametro) =>
             {
-                // TODO Preencher parâmetros desta query
-                throw new NotImplementedException();
+                KeyValuePair<string, object> empresaParametro = new KeyValuePair<string, object>(nomesParametro[0], objeto.Empresa.Codigo);
+                KeyValuePair<string, object> nomeParametro = new KeyValuePair<string, object>(nomesParametro[1], objeto.Reduzido);
+                IDictionary<string, object> parametros = new Dictionary<string, object>();
+                parametros.Add(empresaParametro);
+                parametros.Add(nomeParametro);
+
+                return parametros;
             });
         }
 
@@ -50,8 +58,18 @@ namespace Murta.OrdemServico.Dal.Repositories
         {
             this.repository.Execute<Filial>(Databaseoperation.Update, (List<string> nomesParametro) =>
             {
-                // TODO Preencher parâmetros desta query
-                throw new NotImplementedException();
+                KeyValuePair<string, object> upIdParametro = new KeyValuePair<string, object>(nomesParametro[0], objeto.Codigo);
+                KeyValuePair<string, object> upNomeParametro = new KeyValuePair<string, object>(nomesParametro[1], objeto.Reduzido);
+                KeyValuePair<string, object> upEmpresaParametro = new KeyValuePair<string, object>(nomesParametro[2], objeto.Empresa.Codigo);
+                KeyValuePair<string, object> idParametro = new KeyValuePair<string, object>(nomesParametro[3], objeto.Codigo);
+
+                IDictionary<string, object> parametros = new Dictionary<string, object>();
+                parametros.Add(upIdParametro);
+                parametros.Add(upNomeParametro);
+                parametros.Add(upEmpresaParametro);
+                parametros.Add(idParametro);
+
+                return parametros;
             });
         }
 
@@ -59,8 +77,10 @@ namespace Murta.OrdemServico.Dal.Repositories
         {
             this.repository.Execute<Filial>(Databaseoperation.Delete, (List<string> nomesParametro) =>
             {
-                // TODO Preencher parâmetros desta query
-                throw new NotImplementedException();
+                KeyValuePair<string, object> idParametro = new KeyValuePair<string, object>(nomesParametro[0], objeto.Codigo);
+                IDictionary<string, object> parametros = new Dictionary<string, object>();
+                parametros.Add(idParametro);
+                return parametros;
             });
         }
     }

@@ -51,6 +51,5 @@ namespace Murta.Apoio
                 throw ex;
             }
         }
-
     }
 }

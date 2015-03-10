@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Murta.OrdemServico.Dal.Repositories
 {
-    public class ClienteRepository:IClienteRepository
+    public class ClienteRepository : IClienteRepository
     {
         protected Repository repository = null;
 
@@ -50,7 +50,7 @@ namespace Murta.OrdemServico.Dal.Repositories
 
                     return parametros;
                 });
-        }        
+        }
 
         public void Editar(Cliente objeto)
         {

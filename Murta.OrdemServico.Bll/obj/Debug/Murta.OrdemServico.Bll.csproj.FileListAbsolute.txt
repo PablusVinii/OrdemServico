@@ -3,3 +3,12 @@ C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\De
 C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\obj\Debug\Murta.OrdemServico.Bll.csprojResolveAssemblyReference.cache
 C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\obj\Debug\Murta.OrdemServico.Bll.dll
 C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\obj\Debug\Murta.OrdemServico.Bll.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.OrdemServico.Bll\bin\Debug\Murta.OrdemServico.Bll.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.OrdemServico.Bll\bin\Debug\Murta.OrdemServico.Bll.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.OrdemServico.Bll\bin\Debug\Murta.Dto.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.OrdemServico.Bll\bin\Debug\Murta.QueryFactor.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.OrdemServico.Bll\bin\Debug\Murta.Dto.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.OrdemServico.Bll\bin\Debug\Murta.QueryFactor.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.OrdemServico.Bll\obj\Debug\Murta.OrdemServico.Bll.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.OrdemServico.Bll\obj\Debug\Murta.OrdemServico.Bll.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.OrdemServico.Bll\obj\Debug\Murta.OrdemServico.Bll.pdb
