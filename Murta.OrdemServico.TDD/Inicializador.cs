@@ -1,5 +1,4 @@
-﻿using Murta.Dto;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -15,7 +14,7 @@ namespace Murta
             string connectionClass = ConfigurationManager.AppSettings[ConfigurationManager.AppSettings["ActiveConnectionClass"]];
             string connectionString = ConfigurationManager.ConnectionStrings[ConfigurationManager.AppSettings["ActiveConnectionString"]].ConnectionString;
 
-            Connection.ConfigureConnection(connectionString: connectionString, assemblyKey: assembly, connectionClass: connectionClass);
+            //Murta.Dto.Connection.ConfigureConnection(connectionString: connectionString, assemblyKey: assembly, connectionClass: connectionClass);
         }
     }
 }

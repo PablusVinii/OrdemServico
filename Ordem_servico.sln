@@ -19,9 +19,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murta.OrdemServico.Bll", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murta.Apoio", "Murta.Apoio\Murta.Apoio.csproj", "{59ABB96D-1339-4943-94F7-2ECD275B95EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdemServicoWP8Client", "OrdemServicoWP8Client\OrdemServicoWP8Client.csproj", "{AA039879-8F13-4E6C-B9A4-511750BC96AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murta.OrdemServico.UI.OrdemServicoWP8Client", "OrdemServicoWP8Client\Murta.OrdemServico.UI.OrdemServicoWP8Client.csproj", "{AA039879-8F13-4E6C-B9A4-511750BC96AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murta.OrdemServico.TDD", "Murta.OrdemServico.TDD\Murta.OrdemServico.TDD.csproj", "{4CBDDBFD-1555-4FA7-AA53-5BE2DECB76F9}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Murta.OrdemServico.UI.WindowsForms", "Murta.OrdemServico.UI.WindowsForms\Murta.OrdemServico.UI.WindowsForms.vbproj", "{AB0EEEE2-E77C-4450-8F75-9B4A21629519}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murta.Ordemservico.Wcf", "Murta.Ordemservico.Wcf\Murta.Ordemservico.Wcf.csproj", "{56D99403-9C90-4911-828D-C81B058AF61F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +135,22 @@ Global
 		{4CBDDBFD-1555-4FA7-AA53-5BE2DECB76F9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4CBDDBFD-1555-4FA7-AA53-5BE2DECB76F9}.Release|ARM.ActiveCfg = Release|Any CPU
 		{4CBDDBFD-1555-4FA7-AA53-5BE2DECB76F9}.Release|x86.ActiveCfg = Release|Any CPU
+		{AB0EEEE2-E77C-4450-8F75-9B4A21629519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0EEEE2-E77C-4450-8F75-9B4A21629519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0EEEE2-E77C-4450-8F75-9B4A21629519}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{AB0EEEE2-E77C-4450-8F75-9B4A21629519}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AB0EEEE2-E77C-4450-8F75-9B4A21629519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0EEEE2-E77C-4450-8F75-9B4A21629519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB0EEEE2-E77C-4450-8F75-9B4A21629519}.Release|ARM.ActiveCfg = Release|Any CPU
+		{AB0EEEE2-E77C-4450-8F75-9B4A21629519}.Release|x86.ActiveCfg = Release|Any CPU
+		{56D99403-9C90-4911-828D-C81B058AF61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D99403-9C90-4911-828D-C81B058AF61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D99403-9C90-4911-828D-C81B058AF61F}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{56D99403-9C90-4911-828D-C81B058AF61F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{56D99403-9C90-4911-828D-C81B058AF61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D99403-9C90-4911-828D-C81B058AF61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D99403-9C90-4911-828D-C81B058AF61F}.Release|ARM.ActiveCfg = Release|Any CPU
+		{56D99403-9C90-4911-828D-C81B058AF61F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
