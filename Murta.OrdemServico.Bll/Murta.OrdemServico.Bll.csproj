@@ -39,13 +39,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OrdemServicoBLL.cs" />
+    <Compile Include="AutentitcacaoBusiness.cs" />
+    <Compile Include="ClienteBusiness.cs" />
+    <Compile Include="EmpresaBusiness.cs" />
+    <Compile Include="FilialBusiness.cs" />
+    <Compile Include="FuncionarioBusiness.cs" />
+    <Compile Include="OrdemServicoBusiness.cs" />
+    <Compile Include="ProjetoBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusBusiness.cs" />
+    <Compile Include="TipoHoraBusiness.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Murta.Apoio\Murta.Apoio.csproj">
+      <Project>{59abb96d-1339-4943-94f7-2ecd275b95eb}</Project>
+      <Name>Murta.Apoio</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Murta.Dto\Murta.OrdemServico.Dto.csproj">
       <Project>{95f99421-4468-4b84-af88-7bc34828a55f}</Project>
       <Name>Murta.OrdemServico.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Murta.OrdemServico.Dal\Murta.OrdemServico.Dal.csproj">
+      <Project>{8fb47c88-dc62-4d8f-a14a-9fa56a512e70}</Project>
+      <Name>Murta.OrdemServico.Dal</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

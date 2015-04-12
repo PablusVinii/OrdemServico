@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Criptografia.cs" />
     <Compile Include="Email.cs" />
+    <Compile Include="InvalidDatabaseInstanceException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

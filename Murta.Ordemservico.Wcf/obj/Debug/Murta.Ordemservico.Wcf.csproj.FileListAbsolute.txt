@@ -1,5 +1,0 @@
-C:\Users\JulioCésar\Desktop\OrdemServico\Murta.Ordemservico.Wcf\obj\Debug\Murta.Ordemservico.Wcf.csprojResolveAssemblyReference.cache
-C:\Users\JulioCésar\Desktop\OrdemServico\Murta.Ordemservico.Wcf\bin\Murta.Ordemservico.Wcf.dll
-C:\Users\JulioCésar\Desktop\OrdemServico\Murta.Ordemservico.Wcf\bin\Murta.Ordemservico.Wcf.pdb
-C:\Users\JulioCésar\Desktop\OrdemServico\Murta.Ordemservico.Wcf\obj\Debug\Murta.Ordemservico.Wcf.dll
-C:\Users\JulioCésar\Desktop\OrdemServico\Murta.Ordemservico.Wcf\obj\Debug\Murta.Ordemservico.Wcf.pdb

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7f945481-157a-4443-9180-9601b0d62cf6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57837/SistemaService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SistemaService.disco" MetadataType="Disco" ID="ec8ad693-2869-4f24-9fdd-f1f7d9655d55" SourceId="1" SourceUrl="http://localhost:57837/SistemaService.svc?disco" />
+    <MetadataFile FileName="SistemaService.xsd" MetadataType="Schema" ID="26d45c2e-5009-4208-849d-d188abb4ebf5" SourceId="1" SourceUrl="http://localhost:57837/SistemaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SistemaService1.xsd" MetadataType="Schema" ID="7bb720d4-80b7-4e88-b56f-f5d467da28c3" SourceId="1" SourceUrl="http://localhost:57837/SistemaService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SistemaService2.xsd" MetadataType="Schema" ID="9a0cf794-9f14-472e-819a-1aa73c18fa67" SourceId="1" SourceUrl="http://localhost:57837/SistemaService.svc?xsd=xsd3" />
+    <MetadataFile FileName="SistemaService3.xsd" MetadataType="Schema" ID="ca25f55e-8b38-4bc4-8682-07c85ab7321d" SourceId="1" SourceUrl="http://localhost:57837/SistemaService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SistemaService.wsdl" MetadataType="Wsdl" ID="9ec88912-6551-4a4c-909d-9fb6d4966805" SourceId="1" SourceUrl="http://localhost:57837/SistemaService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -76,12 +76,25 @@ namespace Murta.QueryFactory
             query.Append("UPDATE " + table.NameTable + " SET ");
             foreach (var item in columns.Select((value, i) => new { i, value }))
             {
-                var columnName = item.value;
-                parametersName.Add("@UP_" + columnName.NameColumn + "_" + table.NameTable);
-                query.Append(table.NameTable + "." + columnName.NameColumn + " = @UP_" + columnName.NameColumn + "_" + table.NameTable);
-                query.Append((columns.Count - 1 != item.i) ? ", " : " ");
+                if (item.value.IsUsedInsertOrUpdateOperation)
+                {
+                    var columnName = item.value;
+                    if (!item.value.IsForeignKey)
+                    {
+                        parametersName.Add("@UP_" + columnName.NameColumn + "_" + table.NameTable);
+                        query.Append(table.NameTable + "." + columnName.NameColumn + " = @UP_" + columnName.NameColumn + "_" + table.NameTable);
+                    }
+                    else
+                    {
+                        parametersName.Add("@UP_" + columnName.ForeignKeyName + "_" + table.NameTable);
+                        query.Append(table.NameTable + "." + columnName.ForeignKeyName + " = @UP_" + columnName.ForeignKeyName + "_" + table.NameTable);
+                    }
+
+                    query.Append(", ");
+                }                
             }
 
+            Utils.ChangeLastCollumnToEndParentesis(ref query, ' ');
             CreateWhereClause(whereClauses, query, table.NameTable, ref parametersName);
             return query.ToString();
         }
@@ -97,25 +110,47 @@ namespace Murta.QueryFactory
             {
                 if (!item.value.IsSerial)
                 {
-                    var columnName = item.value;
-                    query.Append(columnName.NameColumn);
-                    query.Append((columns.Count - 1 != item.i) ? ", " : ")");
+                    if (item.value.IsUsedInsertOrUpdateOperation)
+                    {
+                        var columnName = item.value;
+
+                        if (!item.value.IsForeignKey)
+                            query.Append(columnName.NameColumn);
+                        else
+                            query.Append(columnName.ForeignKeyName);
+
+                        query.Append(", ");   
+                    }
                 }
             }
 
+            Utils.ChangeLastCollumnToEndParentesis(ref query, ')');
             query.Append(" VALUES (");
 
             foreach (var item in columns.Select((value, i) => new { i, value }))
             {
                 if (!item.value.IsSerial)
                 {
-                    var columnName = item.value;
-                    parametersName.Add("@" + columnName.NameColumn);
-                    query.Append("@" + columnName.NameColumn);
-                    query.Append((columns.Count - 1 != item.i) ? ", " : ")");
+                    if (item.value.IsUsedInsertOrUpdateOperation)
+                    {
+                        var columnName = item.value;
+
+                        if (!item.value.IsForeignKey)
+                        {
+                            parametersName.Add("@" + columnName.NameColumn);
+                            query.Append("@" + columnName.NameColumn);
+                        }
+                        else
+                        {
+                            parametersName.Add("@" + columnName.ForeignKeyName);
+                            query.Append("@" + columnName.ForeignKeyName);
+                        }
+
+                        query.Append(", ");
+                    }
                 }
             }
-
+            Utils.ChangeLastCollumnToEndParentesis(ref query, ')');
             return query.ToString();
         }
 
@@ -175,7 +210,7 @@ namespace Murta.QueryFactory
                     var columnName = item.value;
                     parametersName.Add("@" + columnName.NameColumn + "_" + table);
                     query.Append(table + "." + columnName.NameColumn + " = @" + columnName.NameColumn + "_" + table);
-                    query.Append((whereClauses.Count - 1 != item.i) ? ", " : " ");
+                    query.Append((whereClauses.Count - 1 != item.i) ? " AND " : " ");
                 }
             }
         }
@@ -191,6 +226,7 @@ namespace Murta.QueryFactory
                         " ON " + join.TableA + "." + join.FieldA + " = " + join.TableB + "." + join.FieldB);
                 }
             }
-        }        
+        }
+        
     }
 }

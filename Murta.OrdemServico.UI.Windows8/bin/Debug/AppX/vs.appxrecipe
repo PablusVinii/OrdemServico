@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JULIOMURTA</Machine>
+    <WindowsUser>JulioCésar</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>1E73611A9F28935AFD47C2D373E58E540FAFC27352D8C2FB14AF6B7A52D16D94</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>29b77d09-0ffe-428a-8e4e-460a26e95da3_1.0.0.0_neutral__9h94kar9a1z7p</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>29b77d09-0ffe-428a-8e4e-460a26e95da3_9h94kar9a1z7p!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>29b77d09-0ffe-428a-8e4e-460a26e95da3</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=JulioCésar</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-25T02:50:51.273</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\bin\Debug\Murta.OrdemServico.UI.Windows8.exe">
+      <PackagePath>Murta.OrdemServico.UI.Windows8.exe</PackagePath>
+      <Modified>2015-03-25T02:50:49.706</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\bin\Debug\Murta.OrdemServico.UI.Windows8.pdb">
+      <PackagePath>Murta.OrdemServico.UI.Windows8.pdb</PackagePath>
+      <Modified>2015-03-25T02:50:49.489</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T20:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T20:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T20:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T20:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2015-03-25T02:32:04.484</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2015-03-18T02:44:26.759</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T16:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2015-03-25T02:40:09.265</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\bin\Debug\Pages\ListagemOS.xaml">
+      <PackagePath>Pages\ListagemOS.xaml</PackagePath>
+      <Modified>2015-03-25T02:32:04.053</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.UI.Windows8\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-03-25T02:50:50.190</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

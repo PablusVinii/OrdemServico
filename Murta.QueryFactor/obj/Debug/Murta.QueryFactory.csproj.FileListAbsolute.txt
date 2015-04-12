@@ -1,5 +1,9 @@
 C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.QueryFactor\bin\Debug\Murta.QueryFactor.dll
 C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.QueryFactor\bin\Debug\Murta.QueryFactor.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.QueryFactor\obj\Debug\Murta.QueryFactory.csprojResolveAssemblyReference.cache
 C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.QueryFactor\obj\Debug\Murta.QueryFactor.dll
 C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.QueryFactor\obj\Debug\Murta.QueryFactor.pdb
-C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.QueryFactor\obj\Debug\Murta.QueryFactory.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.QueryFactor\bin\Debug\Murta.QueryFactor.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.QueryFactor\bin\Debug\Murta.QueryFactor.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.QueryFactor\obj\Debug\Murta.QueryFactor.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Murta.QueryFactor\obj\Debug\Murta.QueryFactor.pdb

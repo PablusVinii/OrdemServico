@@ -53,7 +53,7 @@
                                 <TextBlock 
                                    Text="{Binding Path=LocalizedResources.Module_OS_Search_Employee, Source={StaticResource LocalizedStrings}}" />
 
-                                <toolkit:AutoCompleteBox x:Name="txtFuncionarios"  HorizontalAlignment="Left" Width="400"/>
+                                 <toolkit:AutoCompleteBox x:Name="txtFuncionarios"  HorizontalAlignment="Left" Width="400"/>
 
                                 <Button Content="{Binding Path=LocalizedResources.Module_OS_Search_Send, Source={StaticResource LocalizedStrings}}"
                                     Name="btnPesquisar" Width="400" HorizontalAlignment="Left" Click="btnPesquisar_Click"/>

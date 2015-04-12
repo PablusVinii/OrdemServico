@@ -744,14 +744,14 @@ namespace Ordem_servico.Controllers
             mensagem = mensagem.Replace("{telefone}", "(" + umAgendamento.Cliente.Telefone.DDD + ") " + umAgendamento.Cliente.Telefone.Numero);
             mensagem = mensagem.Replace("{ano}", DateTime.Now.Year.ToString());
 
-            TRS.Apoio.Email umEmailCorporativo = new TRS.Apoio.Email();
+            /*TRS.Apoio.Email umEmailCorporativo = new TRS.Apoio.Email();
             umEmailCorporativo.AddRemetente(ConfigurationManager.AppSettings["EmailRemetente"].ToString());
             umEmailCorporativo.AddDestinatario(umAgendamento.Funcionario.Email.WebMail);
             umEmailCorporativo.AddDestinatario(umAgendamento.Cliente.Email.WebMail);
             umEmailCorporativo.AddDestinatario(ConfigurationManager.AppSettings["EmailAdministrativo"].ToString());
             umEmailCorporativo.AddDestinatarioComCopiaOculta(ConfigurationManager.AppSettings["EmailDiretoriaTecnica"].ToString());
             umEmailCorporativo.AddMensagem(assunto, mensagem);
-            umEmailCorporativo.Enviar();
+            umEmailCorporativo.Enviar();*/
         }
 
     }

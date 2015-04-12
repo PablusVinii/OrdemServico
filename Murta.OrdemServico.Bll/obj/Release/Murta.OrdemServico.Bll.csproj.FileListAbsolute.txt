@@ -1,0 +1,16 @@
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Murta.OrdemServico.Bll.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Murta.OrdemServico.Bll.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Murta.Apoio.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Murta.Dto.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Murta.OrdemServico.Dal.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Murta.QueryFactor.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Dapper.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Murta.Apoio.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Murta.Dto.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Murta.OrdemServico.Dal.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Murta.QueryFactor.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Dapper.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\bin\Release\Dapper.xml
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\obj\Release\Murta.OrdemServico.Bll.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\obj\Release\Murta.OrdemServico.Bll.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Bll\obj\Release\Murta.OrdemServico.Bll.pdb

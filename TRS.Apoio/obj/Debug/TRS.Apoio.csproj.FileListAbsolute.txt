@@ -1,0 +1,32 @@
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\TRS.Apoio\bin\Debug\TRS.Apoio.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\TRS.Apoio\bin\Debug\TRS.Apoio.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\TRS.Apoio\obj\Debug\TRS.Apoio.dll
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\TRS.Apoio\obj\Debug\TRS.Apoio.pdb
+C:\Users\TRS\Documents\Júlio\Projetos\CSharp\Ordem_servico\Source\Ordem_servico\TRS.Apoio\obj\Debug\TRS.Apoio.csprojResolveAssemblyReference.cache
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TRS.Apoio\bin\Debug\TRS.Apoio.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TRS.Apoio\bin\Debug\TRS.Apoio.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TRS.Apoio\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TRS.Apoio\bin\Debug\System.Web.Mvc.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TRS.Apoio\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TRS.Apoio\bin\Debug\System.Web.Mvc.xml
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TRS.Apoio\obj\Debug\TRS.Apoio.csprojResolveAssemblyReference.cache
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TRS.Apoio\obj\Debug\TRS.Apoio.dll
+C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TRS.Apoio\obj\Debug\TRS.Apoio.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\TRS.Apoio\bin\Debug\TRS.Apoio.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\TRS.Apoio\bin\Debug\TRS.Apoio.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\TRS.Apoio\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\TRS.Apoio\bin\Debug\System.Web.Mvc.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\TRS.Apoio\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\TRS.Apoio\bin\Debug\System.Web.Mvc.xml
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\TRS.Apoio\obj\Debug\TRS.Apoio.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\TRS.Apoio\obj\Debug\TRS.Apoio.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\TRS.Apoio\obj\Debug\TRS.Apoio.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\TRS.Apoio\bin\Debug\TRS.Apoio.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\TRS.Apoio\bin\Debug\TRS.Apoio.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\TRS.Apoio\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\TRS.Apoio\bin\Debug\System.Web.Mvc.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\TRS.Apoio\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\TRS.Apoio\bin\Debug\System.Web.Mvc.xml
+C:\Users\JulioCésar\Desktop\OrdemServico\TRS.Apoio\obj\Debug\TRS.Apoio.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\OrdemServico\TRS.Apoio\obj\Debug\TRS.Apoio.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\TRS.Apoio\obj\Debug\TRS.Apoio.pdb

@@ -13,6 +13,9 @@ namespace Murta.QueryFactory.Annotations
         public string NameColumn { get; set; }
         public bool IsObject { get; set; }
         public bool IsSerial { get; set; }
+        public bool IsForeignKey { get; set; }
+        public string ForeignKeyName { get; set; }
+        public bool IsUsedInsertOrUpdateOperation { get; set; }
         public Type Type { get; set; }
         public string NameObjectProperty { get; set; }        
     }

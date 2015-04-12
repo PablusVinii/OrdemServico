@@ -1,0 +1,134 @@
+﻿body {
+    font: 1em Arial;
+}
+
+.modal {
+    background:white;
+    position:absolute;
+    top:20%;
+    left:20%;
+    z-index:1000;
+    width:70%;
+    height:30%;
+    border:1px solid black;
+}
+
+.input-box {
+    width: 100%;
+    margin: 0 auto;
+    margin:0.5%;
+    padding:0.5%;
+}
+
+.input-box-two-cl {    
+    width: 50%;
+    margin: 0 auto;
+    margin:0.5%;
+    padding:0.5%;
+}
+
+.input-box label, input {
+    display:block;
+}
+
+.input-box label {
+    font-weight:bolder;
+    margin-bottom:0.2%;
+}
+
+.input-box input {
+    width:97%;
+    font:1em Arial;
+}
+
+.button {
+    padding: 1em;
+    font-weight:bolder;
+}
+
+.button-blue {
+    background:#1475d1;
+    opacity:0.6;
+    color:white;
+}
+
+.checkbox-login {
+    width: 100%;
+    margin: 0 auto;
+    margin:0.5%;
+    padding:0.5%;
+}
+
+.checkbox-login label, input {
+    display:inline;
+}
+
+.checkbox-login label {
+    font-weight:bolder;
+    margin: 0.2%;   
+}
+
+.top-bar {
+    border:1px solid black;
+    padding: 2% 0.5%;
+}
+
+.content-panel {
+    margin-left:auto;
+    margin-right:0;
+    width:67%;
+    border:1px solid black;
+    float:right;
+    padding:1em;
+}
+
+.required {
+    color:red;
+}
+
+.dropdown-menu {
+    width:20%;
+    min-width:100px;
+    border:1px solid black;
+    margin-left:auto;
+    float:right;   
+}
+
+.menu {
+    border:1px solid black;
+    width:30%;
+    height:75%;
+    min-height:300px;
+    float:left;
+}
+
+.rodape {
+    border:1px solid black;
+    padding: 2% 0.5%;
+    clear:both;
+}
+
+#login-box {
+    width: 40%;
+    margin: 10% auto;    
+    border: 1px solid grey;    
+    background:white;
+    min-width:350px;
+}
+
+#login-label {
+    width: 98%;
+    font: 1.2em Arial;
+    margin: 0 auto;
+    text-align: center;
+    padding:1%;
+    border-bottom:0.1em solid grey;
+}
+
+#estrutura {
+    width:100%;
+    margin:0 auto;
+    border:1px solid black;
+    min-width:400px;
+    min-height:200px;
+}

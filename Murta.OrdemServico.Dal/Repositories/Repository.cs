@@ -1,4 +1,4 @@
-﻿using Murta.OrdemServico.Dal.Exceptions;
+﻿using Murta.Utils.Dal.Exceptions;
 using Murta.QueryFactory;
 using Dapper;
 using System;

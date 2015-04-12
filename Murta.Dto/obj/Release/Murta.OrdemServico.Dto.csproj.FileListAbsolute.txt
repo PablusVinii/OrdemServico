@@ -1,0 +1,7 @@
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Dto\bin\Release\Murta.Dto.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Dto\bin\Release\Murta.Dto.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Dto\bin\Release\Murta.QueryFactor.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Dto\bin\Release\Murta.QueryFactor.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Dto\obj\Release\Murta.OrdemServico.Dto.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Dto\obj\Release\Murta.Dto.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Dto\obj\Release\Murta.Dto.pdb

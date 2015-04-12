@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57837/SistemaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" />
+  <xs:import schemaLocation="http://localhost:57837/SistemaService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Service.WCF.Enums" />
+  <xs:import schemaLocation="http://localhost:57837/SistemaService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Murta.Dto" />
+  <xs:element name="CadastrarOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ordemServico" nillable="true" type="q1:OS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CadastrarOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ordemServico" nillable="true" type="q2:OS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ordemServico" nillable="true" type="q3:OS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExcluirOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ConsultarOrdemServicoResult" nillable="true" type="q4:OS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarOrdemServico">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarOrdemServicoResult" nillable="true" type="q5:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorRangeDataOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dataDe" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dataAte" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorRangeDataOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarPorRangeDataOrdemServicoResult" nillable="true" type="q6:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorRangedeDataeFuncionarioOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dataDe" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dataAte" type="xs:dateTime" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="funcionario" nillable="true" type="q7:Funcionario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorRangedeDataeFuncionarioOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarPorRangedeDataeFuncionarioOrdemServicoResult" nillable="true" type="q8:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorRangedeDataeClienteOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dataDe" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dataAte" type="xs:dateTime" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="cliente" nillable="true" type="q9:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorRangedeDataeClienteOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarPorRangedeDataeClienteOrdemServicoResult" nillable="true" type="q10:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorRangedeDataeFuncionarioeClienteOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dataDe" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dataAte" type="xs:dateTime" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="cliente" nillable="true" type="q11:Cliente" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="funcionario" nillable="true" type="q12:Funcionario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorRangedeDataeFuncionarioeClienteOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarPorRangedeDataeFuncionarioeClienteOrdemServicoResult" nillable="true" type="q13:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorDataeFuncionarioOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="data" type="xs:dateTime" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="funcionario" nillable="true" type="q14:Funcionario" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Service.WCF.Enums" minOccurs="0" name="tipo" type="q15:TipoData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorDataeFuncionarioOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarPorDataeFuncionarioOrdemServicoResult" nillable="true" type="q16:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorDataeClienteOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="data" type="xs:dateTime" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="cliente" nillable="true" type="q17:Cliente" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Service.WCF.Enums" minOccurs="0" name="tipo" type="q18:TipoData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorDataeClienteOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarPorDataeClienteOrdemServicoResult" nillable="true" type="q19:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorDataeFuncionarioeClienteOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="data" type="xs:dateTime" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="funcionario" nillable="true" type="q20:Funcionario" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="cliente" nillable="true" type="q21:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorDataeFuncionarioeClienteOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarPorDataeFuncionarioeClienteOrdemServicoResult" nillable="true" type="q22:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorDataOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="data" type="xs:dateTime" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Service.WCF.Enums" minOccurs="0" name="tipo" type="q23:TipoData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorDataOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarPorDataOrdemServicoResult" nillable="true" type="q24:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorFuncionarioeClienteOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="funcionario" nillable="true" type="q25:Funcionario" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="cliente" nillable="true" type="q26:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorFuncionarioeClienteOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarPorFuncionarioeClienteOrdemServicoResult" nillable="true" type="q27:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorFuncionarioOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="funcionario" nillable="true" type="q28:Funcionario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorFuncionarioOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarPorFuncionarioOrdemServicoResult" nillable="true" type="q29:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorClienteOrdemServico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="cliente" nillable="true" type="q30:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPorClienteOrdemServicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarPorClienteOrdemServicoResult" nillable="true" type="q31:ArrayOfOS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarClientes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarClientesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarClientesResult" nillable="true" type="q32:ArrayOfCliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarProjetos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarProjetosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarProjetosResult" nillable="true" type="q33:ArrayOfProjeto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarTiposHora">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarTiposHoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarTiposHoraResult" nillable="true" type="q34:ArrayOfTipoHora" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarFuncionarios">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarFuncionariosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarFuncionariosResult" nillable="true" type="q35:ArrayOfFuncionario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarStatus">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" minOccurs="0" name="ListarStatusResult" nillable="true" type="q36:ArrayOfStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="senha" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Murta.Dto" minOccurs="0" name="LoginResult" nillable="true" type="q37:Usuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

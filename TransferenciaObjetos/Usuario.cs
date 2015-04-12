@@ -43,6 +43,7 @@ namespace TransferenciaObjetos.Autenticacao
 
         [Display(Name="Repetir Senha")]
         [Required(ErrorMessage="O campo Repetir Senha é obrigatório")]
+       // [System.C Compare("Senha", ErrorMessage="O valor deste campo deve ser igual ao do campo Senha")]
         [StringLength(11, MinimumLength = 4, ErrorMessage = "A Senha deve ter no mínimo 4 e no máximo 11 caracteres")]
         [DataType(DataType.Password)]
         public string RepetirSenha { get; set; }

@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4CBDDBFD-1555-4FA7-AA53-5BE2DECB76F9}</ProjectGuid>
+    <ProjectGuid>{9E8D0501-9C85-43DC-B50B-654E71DA4D1F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Murta.OrdemServico.TDD</RootNamespace>
-    <AssemblyName>Murta.OrdemServico.TDD</AssemblyName>
+    <RootNamespace>Murta.OrdemServico.Tdd</RootNamespace>
+    <AssemblyName>Murta.OrdemServico.Tdd</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,35 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.0.2\lib\net40\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.Firebird">
-      <HintPath>..\packages\EntityFramework.Firebird.4.6.1.0\lib\net40-client\EntityFramework.Firebird.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.0.2\lib\net40\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=4.5.2.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.4.5.2.0\lib\net40-client\FirebirdSql.Data.FirebirdClient.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Security">
-      <HintPath>..\packages\Npgsql.2.2.4.3\lib\net40\Mono.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\MySql.Data.6.9.6\lib\net40\MySql.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Npgsql">
-      <HintPath>..\packages\Npgsql.2.2.4.3\lib\net40\Npgsql.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -78,22 +56,80 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Inicializador.cs" />
+    <Compile Include="OrdemServicoTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\SistemaServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="FuncionarioTest.cs" />
+    <Compile Include="StatusTest.cs" />
+    <Compile Include="TipoHoraTest.cs" />
+    <Compile Include="ProjetoTest.cs" />
+    <Compile Include="ClienteTest.cs" />
+    <Compile Include="AutenticacaoTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Murta.Dto\Murta.OrdemServico.Dto.csproj">
-      <Project>{95f99421-4468-4b84-af88-7bc34828a55f}</Project>
-      <Name>Murta.OrdemServico.Dto</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Murta.OrdemServico.Bll\Murta.OrdemServico.Bll.csproj">
-      <Project>{ccda59c4-9b31-404c-bf81-f743ccf914eb}</Project>
-      <Name>Murta.OrdemServico.Bll</Name>
-    </ProjectReference>
+    <None Include="app.config" />
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.Tdd.SistemaServiceReference.Cliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.Tdd.SistemaServiceReference.Funcionario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.Tdd.SistemaServiceReference.OS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.Tdd.SistemaServiceReference.Projeto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.Tdd.SistemaServiceReference.Status.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.Tdd.SistemaServiceReference.TipoHora.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.Tdd.SistemaServiceReference.Usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\SistemaService.wsdl" />
+    <None Include="Service References\SistemaServiceReference\SistemaService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SistemaServiceReference\SistemaService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SistemaServiceReference\SistemaService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SistemaServiceReference\SistemaService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SistemaServiceReference\SistemaService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SistemaServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SistemaServiceReference\SistemaService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SistemaServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SistemaServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SistemaServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

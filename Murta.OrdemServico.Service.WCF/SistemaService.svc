@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Murta.OrdemServico.Service.WCF.SistemaService" CodeBehind="SistemaService.svc.cs" %>

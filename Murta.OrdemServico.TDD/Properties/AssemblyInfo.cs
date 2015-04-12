@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Murta.OrdemServico.TDD")]
+[assembly: AssemblyTitle("Murta.OrdemServico.Tdd")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Murta.OrdemServico.TDD")]
+[assembly: AssemblyProduct("Murta.OrdemServico.Tdd")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c0a0f257-683c-40f3-ba99-5601a6f71946")]
+[assembly: Guid("d4332d7f-1186-42c4-8238-45f2b2a68d5e")]
 
 // Version information for an assembly consists of the following four values:
 //

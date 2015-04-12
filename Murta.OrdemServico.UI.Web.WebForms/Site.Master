@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Murta.OrdemServico.UI.Web.WebForms.Site" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Ordem de Serviços</title>
+    <link href="Content/Site.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="estrutura">
+            <div class="grey-style top-bar">
+                <span>Ordem de Serviço</span>
+                <div class="dropdown-menu">
+                    Olá usuário
+                </div>
+                <cc1:ToolkitScriptManager ID="tsManager" runat="server">
+                </cc1:ToolkitScriptManager>
+            </div>
+            <div class="grey-style menu">
+                <ul>
+                    <li>
+                        <a href="OrdemServico/Index.aspx"> Ordem de Serviço</a>
+                    </li>
+                    <li>
+                        <a href="#">Agendamento</a>
+                    </li>
+                    <li>
+                        <a href="#">Funcionários</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-panel">
+                <div class="header">Teste</div>
+                <ol class="breadcrumb">
+                    <li>Home</li>
+                    <li class="active">Atual</li>
+                </ol>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="rodape">
+                <span>Rodapé do Layout</span>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

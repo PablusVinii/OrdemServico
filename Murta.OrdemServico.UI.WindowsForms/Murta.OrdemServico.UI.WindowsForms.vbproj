@@ -50,6 +50,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -69,12 +71,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgendamentosForm.Designer.vb">
-      <DependentUpon>AgendamentosForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AgendamentosForm.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="LoginForm.Designer.vb">
       <DependentUpon>LoginForm.vb</DependentUpon>
     </Compile>
@@ -108,11 +104,15 @@
     <Compile Include="OrdemServico\OrdemServicoUserControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Service References\SistemaServiceReference\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ComboboxUtils.vb" />
+    <Compile Include="Utils\Validador.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AgendamentosForm.resx">
-      <DependentUpon>AgendamentosForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +130,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -139,9 +140,71 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.UI.WindowsForms.SistemaServiceReference.Cliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.UI.WindowsForms.SistemaServiceReference.Funcionario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.UI.WindowsForms.SistemaServiceReference.OS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.UI.WindowsForms.SistemaServiceReference.Projeto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.UI.WindowsForms.SistemaServiceReference.Status.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\Murta.OrdemServico.UI.WindowsForms.SistemaServiceReference.TipoHora.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SistemaServiceReference\SistemaService.wsdl" />
+    <None Include="Service References\SistemaServiceReference\SistemaService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SistemaServiceReference\SistemaService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SistemaServiceReference\SistemaService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SistemaServiceReference\SistemaService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Murta.Dto\Murta.OrdemServico.Dto.csproj">
+      <Project>{95f99421-4468-4b84-af88-7bc34828a55f}</Project>
+      <Name>Murta.OrdemServico.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Murta.OrdemServico.Bll\Murta.OrdemServico.Bll.csproj">
+      <Project>{ccda59c4-9b31-404c-bf81-f743ccf914eb}</Project>
+      <Name>Murta.OrdemServico.Bll</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Agendamento\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SistemaServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SistemaServiceReference\SistemaService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SistemaServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SistemaServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SistemaServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

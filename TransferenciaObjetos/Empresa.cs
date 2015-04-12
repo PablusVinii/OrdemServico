@@ -4,8 +4,6 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Murta.QueryFactor;
-using Murta.QueryFactor.Annotations;
 
 // ********************************************************************* 
 //
@@ -25,16 +23,13 @@ using Murta.QueryFactor.Annotations;
 // ********************************************************************* 
 
 namespace TransferenciaObjetos
-{
-    [Table(NameTable="SYS_COMPANY")]
+{    
     public  class Empresa
     {
-        [Display(Name="Código")]
-        [Column(NameColumn="EMPRESA")]
+        [Display(Name="Código")] 
         public string Codigo { get; set; }
 
-        [Display(Name="Empresa")]
-        [Column(NameColumn="NOME")]
+        [Display(Name="Empresa")] 
         public string Nome { get; set; }
     }
 }

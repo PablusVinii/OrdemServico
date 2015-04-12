@@ -24,6 +24,33 @@ C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Deb
 C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\obj\Debug\Negocio.dll
 C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\obj\Debug\Negocio.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\obj\Debug\Negocio.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\Negocio.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\Negocio.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\AcessaDados.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\TransferenciaObjetos.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\TRS.Apoio.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\FastReport.Web.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\FastReport.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\AcessaDados.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\TransferenciaObjetos.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\TRS.Apoio.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Negocio\obj\Debug\Negocio.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\Negocio.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\Negocio.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\AcessaDados.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\TransferenciaObjetos.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\TRS.Apoio.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\FastReport.Web.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\FastReport.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\AcessaDados.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\TransferenciaObjetos.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\TRS.Apoio.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
 C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\obj\Debug\Negocio.dll
 C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\obj\Debug\Negocio.pdb

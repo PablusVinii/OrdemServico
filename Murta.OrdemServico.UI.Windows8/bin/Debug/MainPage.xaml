@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Murta.OrdemServico.UI.Windows8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Murta.OrdemServico.UI.Windows8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox HorizontalAlignment="Left" Margin="450,293,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="64" Width="477" Name="txtLogin"/>
+        <TextBox HorizontalAlignment="Left" Margin="450,452,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="64" Width="477" Name="txtSenha"/>
+        <Button x:ConnectionId='1' Content="Entrar" HorizontalAlignment="Left" Margin="450,587,0,0" VerticalAlignment="Top" Height="70" Width="477"                      FontSize="36" Name="btnEntrar"/>
+        <TextBlock HorizontalAlignment="Left" Margin="450,229,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Height="64" Width="477" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="450,388,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top" Height="64" Width="477" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,42,0,0" TextWrapping="Wrap" Text="Gerenciador de Ordens de Serviço" VerticalAlignment="Top" Height="91" Width="1346" FontSize="72" TextAlignment="Center"/>
+    </Grid>
+</Page>
+

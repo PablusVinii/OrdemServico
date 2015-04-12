@@ -1,5 +1,6 @@
 ﻿using AcessaDados;
 using FirebirdSql.Data.FirebirdClient;
+using Murta.Apoio;
 using System;
 using System.Collections.Generic;
 using System.Linq;

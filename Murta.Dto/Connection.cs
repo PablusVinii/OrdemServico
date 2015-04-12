@@ -6,12 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Reflection;
+using System.Data.Common;
 
-namespace Murta.Dto
+namespace Murta.OrdemServico.Dto
 {
     public static class Connection
     {
-
         private static object connection = new object();
 
         public static void ConfigureConnection(string connectionString, string assemblyKey, string connectionClass)
@@ -41,12 +41,12 @@ namespace Murta.Dto
             }
         }
 
-        public static object GetInstance()
+        public static DbConnection GetInstance()
         {
             if (connection == null)
                 throw new Exception("No database connection configurated");
 
-            return connection;
+            return (DbConnection) connection;
         }
     }
 }

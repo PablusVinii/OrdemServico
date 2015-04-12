@@ -1,0 +1,4 @@
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Apoio\bin\Release\Murta.Apoio.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Apoio\bin\Release\Murta.Apoio.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Apoio\obj\Release\Murta.Apoio.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Apoio\obj\Release\Murta.Apoio.pdb

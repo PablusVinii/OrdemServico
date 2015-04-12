@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AjaxControlToolkit-1.0.20229.24049</id>
+    <version>1.0.20229.24049</version>
+    <authors>janono</authors>
+    <owners>janono</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AjaxControlToolkit.dll version 1.0.20229.24049</description>
+    <references>
+      <reference file="AjaxControlToolkit.dll" />
+    </references>
+  </metadata>
+</package>

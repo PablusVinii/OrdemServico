@@ -1,0 +1,4 @@
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.QueryFactor\bin\Release\Murta.QueryFactor.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.QueryFactor\bin\Release\Murta.QueryFactor.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.QueryFactor\obj\Release\Murta.QueryFactor.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.QueryFactor\obj\Release\Murta.QueryFactor.pdb

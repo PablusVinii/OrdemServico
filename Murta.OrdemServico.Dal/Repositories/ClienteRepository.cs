@@ -1,5 +1,4 @@
-﻿using Murta.Dto;
-using Murta.OrdemServico.Dal.Exceptions;
+﻿using Murta.Utils.Dal.Exceptions;
 using Murta.OrdemServico.Dal.Interfaces;
 using Murta.QueryFactory;
 using Murta.QueryFactory.Dapper;
@@ -9,10 +8,11 @@ using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Murta.OrdemServico.Dto;
 
 namespace Murta.OrdemServico.Dal.Repositories
 {
-    public class ClienteRepository : IClienteRepository
+    public class ClienteRepository:IClienteRepository
     {
         protected Repository repository = null;
 
@@ -50,7 +50,7 @@ namespace Murta.OrdemServico.Dal.Repositories
 
                     return parametros;
                 });
-        }
+        }        
 
         public void Editar(Cliente objeto)
         {

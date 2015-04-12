@@ -19,20 +19,19 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ScrollViewer>
-            <StackPanel>
-                <!--TitlePanel contains the name of the application and page title-->
-                <StackPanel Grid.Row="0" Margin="12,17,0,28">
-                    <TextBlock Style="{StaticResource PhoneTextNormalStyle}">
+        <StackPanel>
+            <!--TitlePanel contains the name of the application and page title-->
+            <StackPanel Grid.Row="0" Margin="12,17,0,28">
+                <TextBlock Style="{StaticResource PhoneTextNormalStyle}">
             	        <Run Name="Applicationtitle"
                             Text="{Binding Path=LocalizedResources.Welcome, Source={StaticResource LocalizedStrings}}"/>
             	        <LineBreak/>
             	        <Run/>
-                    </TextBlock>
-                    <TextBlock Text="{Binding Path=LocalizedResources.Menu, Source={StaticResource LocalizedStrings}}" 
+                </TextBlock>
+                <TextBlock Text="{Binding Path=LocalizedResources.Menu, Source={StaticResource LocalizedStrings}}" 
                        Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-                </StackPanel>
-
+            </StackPanel>
+            <ScrollViewer>
                 <!--ContentPanel - place additional content here-->
 
                 <StackPanel>
@@ -62,7 +61,8 @@
                         </StackPanel>
                     </Grid>
                 </StackPanel>
-            </StackPanel>
-        </ScrollViewer>
+
+            </ScrollViewer>
+        </StackPanel>
     </Grid>
 </phone:PhoneApplicationPage>

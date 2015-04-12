@@ -40,6 +40,6 @@ namespace OrdemServicoWP8Client.Classes.Utils
             var client = new WebClient();
             client.OpenReadCompleted += callback;
             client.OpenReadAsync(new Uri(url));           
-        }        
+        }      
     }
 }

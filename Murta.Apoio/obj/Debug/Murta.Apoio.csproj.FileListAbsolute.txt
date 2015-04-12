@@ -5,6 +5,5 @@ C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Apoio\obj\Debug\Murta.A
 C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.Apoio\obj\Debug\Murta.Apoio.pdb
 C:\Users\JulioCésar\Desktop\OrdemServico\Murta.Apoio\bin\Debug\Murta.Apoio.dll
 C:\Users\JulioCésar\Desktop\OrdemServico\Murta.Apoio\bin\Debug\Murta.Apoio.pdb
-C:\Users\JulioCésar\Desktop\OrdemServico\Murta.Apoio\obj\Debug\Murta.Apoio.csprojResolveAssemblyReference.cache
 C:\Users\JulioCésar\Desktop\OrdemServico\Murta.Apoio\obj\Debug\Murta.Apoio.dll
 C:\Users\JulioCésar\Desktop\OrdemServico\Murta.Apoio\obj\Debug\Murta.Apoio.pdb

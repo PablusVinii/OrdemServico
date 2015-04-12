@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SistemaService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57837/SistemaService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57837/SistemaService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57837/SistemaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Dto" />
+      <xsd:import schemaLocation="http://localhost:57837/SistemaService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Murta.OrdemServico.Service.WCF.Enums" />
+      <xsd:import schemaLocation="http://localhost:57837/SistemaService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Murta.Dto" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISistema_CadastrarOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:CadastrarOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_CadastrarOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CadastrarOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_EditarOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_EditarOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ExcluirOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ExcluirOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ConsultarOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ConsultarOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorRangeDataOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorRangeDataOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorRangeDataOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorRangeDataOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorRangedeDataeFuncionarioOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorRangedeDataeFuncionarioOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorRangedeDataeFuncionarioOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorRangedeDataeFuncionarioOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorRangedeDataeClienteOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorRangedeDataeClienteOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorRangedeDataeClienteOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorRangedeDataeClienteOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorRangedeDataeFuncionarioeClienteOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorRangedeDataeFuncionarioeClienteOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorRangedeDataeFuncionarioeClienteOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorRangedeDataeFuncionarioeClienteOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorDataeFuncionarioOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorDataeFuncionarioOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorDataeFuncionarioOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorDataeFuncionarioOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorDataeClienteOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorDataeClienteOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorDataeClienteOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorDataeClienteOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorDataeFuncionarioeClienteOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorDataeFuncionarioeClienteOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorDataeFuncionarioeClienteOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorDataeFuncionarioeClienteOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorDataOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorDataOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorDataOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorDataOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorFuncionarioeClienteOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorFuncionarioeClienteOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorFuncionarioeClienteOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorFuncionarioeClienteOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorFuncionarioOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorFuncionarioOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorFuncionarioOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorFuncionarioOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorClienteOrdemServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorClienteOrdemServico" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarPorClienteOrdemServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPorClienteOrdemServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarClientes_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarClientes" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarClientes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarProjetos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProjetos" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarProjetos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProjetosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarTiposHora_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarTiposHora" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarTiposHora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarTiposHoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarFuncionarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFuncionarios" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarFuncionarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFuncionariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarStatus" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_ListarStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="ISistema_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISistema">
+    <wsdl:operation name="CadastrarOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/CadastrarOrdemServico" message="tns:ISistema_CadastrarOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/CadastrarOrdemServicoResponse" message="tns:ISistema_CadastrarOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/EditarOrdemServico" message="tns:ISistema_EditarOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/EditarOrdemServicoResponse" message="tns:ISistema_EditarOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ExcluirOrdemServico" message="tns:ISistema_ExcluirOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ExcluirOrdemServicoResponse" message="tns:ISistema_ExcluirOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ConsultarOrdemServico" message="tns:ISistema_ConsultarOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ConsultarOrdemServicoResponse" message="tns:ISistema_ConsultarOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarOrdemServico" message="tns:ISistema_ListarOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarOrdemServicoResponse" message="tns:ISistema_ListarOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorRangeDataOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarPorRangeDataOrdemServico" message="tns:ISistema_ListarPorRangeDataOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarPorRangeDataOrdemServicoResponse" message="tns:ISistema_ListarPorRangeDataOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorRangedeDataeFuncionarioOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarPorRangedeDataeFuncionarioOrdemServico" message="tns:ISistema_ListarPorRangedeDataeFuncionarioOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarPorRangedeDataeFuncionarioOrdemServicoResponse" message="tns:ISistema_ListarPorRangedeDataeFuncionarioOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorRangedeDataeClienteOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarPorRangedeDataeClienteOrdemServico" message="tns:ISistema_ListarPorRangedeDataeClienteOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarPorRangedeDataeClienteOrdemServicoResponse" message="tns:ISistema_ListarPorRangedeDataeClienteOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorRangedeDataeFuncionarioeClienteOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarPorRangedeDataeFuncionarioeClienteOrdemServico" message="tns:ISistema_ListarPorRangedeDataeFuncionarioeClienteOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarPorRangedeDataeFuncionarioeClienteOrdemServicoResponse" message="tns:ISistema_ListarPorRangedeDataeFuncionarioeClienteOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorDataeFuncionarioOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarPorDataeFuncionarioOrdemServico" message="tns:ISistema_ListarPorDataeFuncionarioOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarPorDataeFuncionarioOrdemServicoResponse" message="tns:ISistema_ListarPorDataeFuncionarioOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorDataeClienteOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarPorDataeClienteOrdemServico" message="tns:ISistema_ListarPorDataeClienteOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarPorDataeClienteOrdemServicoResponse" message="tns:ISistema_ListarPorDataeClienteOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorDataeFuncionarioeClienteOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarPorDataeFuncionarioeClienteOrdemServico" message="tns:ISistema_ListarPorDataeFuncionarioeClienteOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarPorDataeFuncionarioeClienteOrdemServicoResponse" message="tns:ISistema_ListarPorDataeFuncionarioeClienteOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorDataOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarPorDataOrdemServico" message="tns:ISistema_ListarPorDataOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarPorDataOrdemServicoResponse" message="tns:ISistema_ListarPorDataOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorFuncionarioeClienteOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarPorFuncionarioeClienteOrdemServico" message="tns:ISistema_ListarPorFuncionarioeClienteOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarPorFuncionarioeClienteOrdemServicoResponse" message="tns:ISistema_ListarPorFuncionarioeClienteOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorFuncionarioOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarPorFuncionarioOrdemServico" message="tns:ISistema_ListarPorFuncionarioOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarPorFuncionarioOrdemServicoResponse" message="tns:ISistema_ListarPorFuncionarioOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorClienteOrdemServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarPorClienteOrdemServico" message="tns:ISistema_ListarPorClienteOrdemServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarPorClienteOrdemServicoResponse" message="tns:ISistema_ListarPorClienteOrdemServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarClientes">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarClientes" message="tns:ISistema_ListarClientes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarClientesResponse" message="tns:ISistema_ListarClientes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarProjetos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarProjetos" message="tns:ISistema_ListarProjetos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarProjetosResponse" message="tns:ISistema_ListarProjetos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarTiposHora">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarTiposHora" message="tns:ISistema_ListarTiposHora_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarTiposHoraResponse" message="tns:ISistema_ListarTiposHora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarFuncionarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarFuncionarios" message="tns:ISistema_ListarFuncionarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarFuncionariosResponse" message="tns:ISistema_ListarFuncionarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/ListarStatus" message="tns:ISistema_ListarStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/ListarStatusResponse" message="tns:ISistema_ListarStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISistema/Login" message="tns:ISistema_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISistema/LoginResponse" message="tns:ISistema_Login_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISistema" type="tns:ISistema">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CadastrarOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/CadastrarOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/EditarOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ExcluirOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ConsultarOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorRangeDataOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarPorRangeDataOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorRangedeDataeFuncionarioOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarPorRangedeDataeFuncionarioOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorRangedeDataeClienteOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarPorRangedeDataeClienteOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorRangedeDataeFuncionarioeClienteOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarPorRangedeDataeFuncionarioeClienteOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorDataeFuncionarioOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarPorDataeFuncionarioOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorDataeClienteOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarPorDataeClienteOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorDataeFuncionarioeClienteOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarPorDataeFuncionarioeClienteOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorDataOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarPorDataOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorFuncionarioeClienteOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarPorFuncionarioeClienteOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorFuncionarioOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarPorFuncionarioOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPorClienteOrdemServico">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarPorClienteOrdemServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarClientes">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarProjetos">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarProjetos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarTiposHora">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarTiposHora" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarFuncionarios">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarFuncionarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarStatus">
+      <soap:operation soapAction="http://tempuri.org/ISistema/ListarStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/ISistema/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SistemaService">
+    <wsdl:port name="BasicHttpBinding_ISistema" binding="tns:BasicHttpBinding_ISistema">
+      <soap:address location="http://localhost:57837/SistemaService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

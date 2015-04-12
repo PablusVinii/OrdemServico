@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Murta.OrdemServico.Dal.Interfaces
 {
-    public interface IOrdemServicoRepository:IRepository<Murta.Dto.OrdemServico, int>
+    public interface IOrdemServicoRepository:IRepository<Murta.OrdemServico.Dto.OS, int>
     {
 
     }

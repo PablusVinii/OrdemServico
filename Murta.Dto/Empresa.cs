@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Murta.Dto
+namespace Murta.OrdemServico.Dto
 {
     [Table(NameTable="SYS_COMPANY")]
     public class Empresa
-    {        
-        [Column(NameColumn="EMPRESA")]
+    {
+        [Column(NameColumn = "EMPRESA", IsForeignKey = true, ForeignKeyName = "EMPRESA", IsUsedInsertOrUpdateOperation = true)]
         public string Codigo { get; set; }
 
         [Column(NameColumn="NOME")]

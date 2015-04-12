@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -31,7 +32,7 @@ namespace OrdemServicoWP8Client.Classes.Utils
 
         public static void ImportarDados()
         {
-            // TODO Realizar importação dos dados aqui.
+            
         }
     }
 }

@@ -1,0 +1,17 @@
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Murta.OrdemServico.Dal.dll.config
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Murta.OrdemServico.Dal.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Murta.OrdemServico.Dal.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Dapper.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Murta.Apoio.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Murta.Dto.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Murta.QueryFactor.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Murta.Apoio.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Murta.Dto.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Murta.QueryFactor.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Dapper.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\Dapper.xml
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\bin\Release\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\obj\Release\Murta.OrdemServico.Dal.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\obj\Release\Murta.OrdemServico.Dal.dll
+C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\Murta.OrdemServico.Dal\obj\Release\Murta.OrdemServico.Dal.pdb

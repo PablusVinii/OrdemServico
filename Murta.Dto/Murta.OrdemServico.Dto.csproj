@@ -45,10 +45,12 @@
     <Compile Include="Empresa.cs" />
     <Compile Include="Filial.cs" />
     <Compile Include="Funcionario.cs" />
-    <Compile Include="OrdemServico.cs" />
+    <Compile Include="OS.cs" />
     <Compile Include="Projeto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Status.cs" />
     <Compile Include="TipoHora.cs" />
+    <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Murta.QueryFactor\Murta.QueryFactory.csproj">

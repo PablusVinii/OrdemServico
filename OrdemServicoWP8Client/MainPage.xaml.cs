@@ -54,7 +54,7 @@ namespace OrdemServicoWP8Client
                 {
                     var username = txtNomeUsuario.Text.Trim();
                     var password = txtSenha.Password.Trim();
-                    var salvarSenha = chkManterConectado.IsChecked != null ? true : false;
+                    var salvarSenha = chkManterConectado.IsChecked.HasValue ? chkManterConectado.IsChecked.Value : false;
 
                     Usuario umUsuario = this.autenticacaoRepository.Login(username, password);
                     this.autenticacaoRepository.SalvarSenha(salvarSenha);
