@@ -24,3 +24,6 @@ C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\bin\Deb
 C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\obj\Debug\Negocio.dll
 C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Negocio\obj\Debug\Negocio.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\obj\Debug\Negocio.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Negocio\obj\Debug\Negocio.pdb

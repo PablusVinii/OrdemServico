@@ -14,3 +14,4 @@ C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaOb
 C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaObjetos\obj\Debug\TransferenciaObjetos.dll
 C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\TransferenciaObjetos\obj\Debug\TransferenciaObjetos.pdb
 C:\Users\JulioCésar\Desktop\Projetos\OrdemServico\TransferenciaObjetos\obj\Debug\TransferenciaObjetos.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\OrdemServico\TransferenciaObjetos\obj\Debug\TransferenciaObjetos.csprojResolveAssemblyReference.cache

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 
 namespace Murta
-{
+{    
     public class Inicializador
     {
         public static void InicializaConexao()

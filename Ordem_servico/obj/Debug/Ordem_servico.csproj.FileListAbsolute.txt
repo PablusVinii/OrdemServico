@@ -158,3 +158,6 @@ C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\b
 C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\obj\Debug\Ordem_servico.csprojResolveAssemblyReference.cache
 C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\obj\Debug\Ordem_servico.dll
 C:\Users\TRS\Desktop\Ordem de Servico\branches\Julio Cesar Murta\Ordem_servico\obj\Debug\Ordem_servico.pdb
+C:\Users\JulioCésar\Desktop\OrdemServico\Ordem_servico\obj\Debug\Ordem_servico.csprojResolveAssemblyReference.cache
+C:\Users\JulioCésar\Desktop\OrdemServico\Ordem_servico\obj\Debug\Ordem_servico.dll
+C:\Users\JulioCésar\Desktop\OrdemServico\Ordem_servico\obj\Debug\Ordem_servico.pdb

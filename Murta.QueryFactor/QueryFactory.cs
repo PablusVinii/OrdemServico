@@ -191,7 +191,6 @@ namespace Murta.QueryFactory
                         " ON " + join.TableA + "." + join.FieldA + " = " + join.TableB + "." + join.FieldB);
                 }
             }
-        }
-        
+        }        
     }
 }
